@@ -1,0 +1,6 @@
+If you’ve ever felt the need for a camera that accepts autofocus lenses, but doesn’t autofocus, then the EF-M (EF lenses-Manual focus) may be the one for you. Canon designed the EF-M with the photography student in mind, since often students are not allowed to use autofocus cameras in their course work.
+
+The EF-M’s exposure modes consist of program, shutter and aperture-priority' AE, and metered manual. The metering modes include 3-zone evaluative (for program), centerweighted (for shutter-priority AE, aperture-priority AE and manual), and partial metering. The latter can be selected by the user at any time. Other exposure features include exposure compensation and AE lock.
+Shutter speeds range from 2 seconds to 1/1000 second, plus B, with X sync at 1/90. The hot shoe has dedicated flash contacts for the Speedlite 200M, but does not offer TTL flash metering. Other features include DX film coding with override and a self-timer.
+
+The EF-M has a built-in single-shot winder that prewinds to the end of the roll. Auto film rewind and mid-roll rewind are available.

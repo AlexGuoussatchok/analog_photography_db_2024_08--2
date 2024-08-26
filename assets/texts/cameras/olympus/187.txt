@@ -1,0 +1,62 @@
+It was 1975 when Olympus made the call to launch their final Hail Mary in the competitive 40mm fixed-lens rangefinder game. Olympus engineers aimed to better the already well-received Olympus 35 SP and replace it with the RD (short for Rangefinder Deluxe) in hopes of making their last professional rangefinder one for the ages. The RD would be the premier offering in a range of cameras that included the even smaller RC, the auto-only DC, and the slower ED. With stiff competition from Canon, Minolta, and Leica, the play wouldn’t be easy.
+
+Alas, Olympus came up a few yards short. By 1975, most professional shooters had moved to SLR systems and the RD didn’t present any significant advances that hadn’t been seen in years prior from the likes of the Canonet QL17 and Minolta’s Hi-Matic 7sii. Suffering a similar fate as the OM-3Ti, production of the RD ended rather abruptly. The result is that the RD is something of a rarity these days.
+
+Though history may not have been kind to the RD, it’s worth another look. Even if its contemporary competition presents a better over-all package, in many ways the 35 RD remains the premier Olympus rangefinder.
+
+Lens and Viewfinder
+
+Although the RD’s spec sheet doesn’t scintillate, the camera certainly has its merits. Chief among them is the 6-element F. Zuiko 40mm f1.7 lens. It’s a downright stellar performer, and it’s been said that the lens in the RD provided the optical framework for the rare OM Zuiko 40mm f/2 lens (sans multi-coating) that Yoshihisa Maitani designed for himself. It’s a good vote of confidece, though I have no idea if the rumor is true.
+
+Similar to other compact rangefinder lenses of the era, light and sharpness falloff is noticeable in the corners up to f/4. But at f/4 and above, vignetting is all but gone, and sharpness is manifested in classic Zuiko style; with it reaching its maximum sharpness at f/8. In line with its counterparts, the lens is of the single coated variety, so contrast is slightly reduced, and flare and ghosting aren’t as stifled as with some multi-coated lenses. When shooting in bright daylight, a hood is necessary to reduce these optical aberrations. Fortunately, the 49mm lens thread is common and finding a cheap hood on eBay should prove quite simple.
+
+Though it may seem tiny at first glance, in use the viewfinder is surprisingly bright and free of distraction. The 40mm frame-lines are vibrant and are given ample padding due to the 0.6x magnification of the finder. The selected aperture display stays out of the shooter’s way along the bottom of the frame, though I much prefer viewfinders that place this scale on the right side of the frame.
+
+Parallax correction is handled via supplemental frame-line indicators, which is a bit of a disappointment compared to the true parallax corrected finder of the Canonet QL17, and with a close focus minimum of 2.8 feet, macro and portraiture work is better suited to other cameras.
+
+olympus 35 RD review-1olympus 35 RD review-8olympus 35 RD review-13
+Meter and Shutter
+
+Like other popular players in the space, the Olympus 35 RD sports a common CDS metering cell on the front of the lens, making it convenient for filter use; a feature refinement from the filter-unfriendly placement on the SP. This meter is capable of an exposure index of 25 – 800 ASA and was designed to be powered by the now frowned upon 1.35v mercury cell. As we’ve mentioned before, a common LR-44 or SR-44, or even a 1.4v zinc air hearing aid battery will work, although images tend to be slightly underexposed due to the increased voltage; a problem easily compensated for by adjusting the ASA dial to a slower speed. Keep in mind that CDS meters tend to be a bit finicky after forty years of life, so if exposure automation is your thing, proceed with caution and ensure the meter is up to spec before committing to purchase.
+
+Fortunately, the 35 RD has a large battery bay (like the Canonet) and will accept an MR-9 adapter coupled with the appropriate modern cell. Constant power draw is severed by replacing the lens cap when not in use, or by moving the aperture ring away from Automatic.
+
+Fitted with a mechanical Seiko leaf shutter, the RD is capable of exposures from 1/2 of a second to 1/500th of a second, plus Bulb mode for long exposures, and because it has a leaf shutter an attached flash will sync at all speeds. Flash shooters have options for both hot shoe sync as well as PC sync, and of even greater benefit to flashianados, the RD allows guide number auto-flash exposure. In this mode, the shooter simply sets the aperture dial to the flash symbol, sets the GN guide to the appropriate distance (14m, 20m, or 28m), and the camera will automatically set the aperture based on the shutter speed and focused distance. Truth be told, I’m not much of a flash user, so I haven’t experimented much, but those I know who’ve used a flash on this camera say it works quite well.
+
+Fans of automation will rejoice to read that the 35 RD does have a shutter-priority auto mode. The shooter sets the aperture ring to A, selects the desired shutter speed, and the camera will calculate the appropriate aperture for the scene. As an additional convenience, the shutter will not release if the camera determines that the necessary aperture is outside the limits of what’s available. Some shooters will enjoy this electronic safety measure, others will find it a nuisance.
+
+If challenging lighting situations call for it, the shooter can lock exposure via half press of the shutter release button. While this may seem similar to its counterparts, the 35 RD is cut from a different cloth. Instead of the needle constantly showing the suitable aperture, the RD’s meter will not read at all until the shutter release is half-pressed. This triggers the needle to move from right to left across the aperture range, eventually settling on the proper aperture. Furthermore, I’ve found that even the slightest change in light hitting the cell can trick the meter into under- or over-exposing by quite a bit. Those who rely on automation to shoot may find this a bit tricky.
+
+When used in manual override, the aperture needle follows the same behavioral pattern of right to left movement, eventually settling on the chosen aperture. While a nice reminder of what the shooter has chosen, it does not apprise of whether the shooter is in Auto mode or not.
+
+olympus 35 RD review-11olympus 35 RD review-5olympus 35 RD review-4olympus 35 RD review-10
+Ergonomics and Build
+
+Even with it’s diminutive stature (4 1/4″ x 2 3/4″ x 2 1/4″) the camera feels well-balanced in the hand. Extended stints in larger hands might cause some discomfort, but the weight (470 grams) is such that it can be worn around the neck without it feeling like it’s dragging you down.
+
+Despite all of its beauty (it’s a really good looking camera), the location of the aperture ring is a major point of contention. The lens barrel is designed in such a way that it bulges to its widest diameter right around the focusing ring. While this design makes it a breeze to acquire focus with its short throw and smooth rotation, it regrettably crowds out the aperture ring positioned just behind the focus ring. Even shooters with slim fingers will find themselves grabbing an unwanted combination of focus and aperture ring when attempting to adjust aperture manually, which makes shooting in manual a bit frustrating. If street shooting is your intention, it may be better to leave this camera in auto mode to avoid accidentally fumbling a predetermined focus distance during aperture adjustments.
+
+The film advance lever leaves me mildly deflated as well. While actuating it results in a throw that’s smooth and precise, I can’t help but feel like the lever could be heftier and the throw offer a bit more feedback. Quick advances find me worrying that I may rip the lever away from the camera body at any moment. This cognizance of how forceful I’m advancing film when out shooting is distracting, especially when trying to get shots off in rapid succession. I much prefer the heartier advances of the Canonet or 7sii, which aren’t exactly Leica-like themselves.
+
+Film access is provided via a small tab on the lower left of the bottom plate. No need to pop the rewind crank or perform a series of lift, pull, press maneuvers. Some shooters will find this appealing and others may consider it a light leak waiting to happen. Those concerned about unintentionally exposing their film should be aware that the tab is recessed and small enough to eliminate accidental snags. I find it to be the most convenient film bay opening mechanism I’ve ever used.
+
+olympus 35 RD review-12olympus 35 RD review-7olympus 35 RD review-6
+olympus 35 RD review-9olympus 35 RD review-2olympus 35 RD review-15
+DVL Olympus 35 RD samples-15DVL Olympus 35 RD samples-12DVL Olympus 35 RD samples-11
+DVL Olympus 35 RD samples-10DVL Olympus 35 RD samples-9DVL Olympus 35 RD samples-8
+DVL Olympus 35 RD samples-7DVL Olympus 35 RD samples-6DVL Olympus 35 RD samples-5
+DVL Olympus 35 RD samples-4DVL Olympus 35 RD samples-1
+DVL Olympus 35 RD samples-13DVL Olympus 35 RD samples-14DVL Olympus 35 RD samples-16
+Shots in the samples gallery were made with Ilford FP4 and Fuji Venus 800.
+
+Points of Caution
+
+If this camera sounds like something you’d like to shoot, there are points of caution to be considered. Should you find an RD (they’re pretty rare, after all), don’t be surprised if it suffers from sticky shutter syndrome; a common ailment. That nicely dampened focusing ring I praised earlier? It serves double duty as a ticking time bomb. The helicoid grease used during manufacturing of the lens is prone to separating over the course of four plus decades, and this oil frequently finds its way between the shutter and aperture blades.
+
+Equally common is finding one with a hazy viewfinder, which renders the camera useless. These bodies were not well sealed, and dust and haze are common inside the finder and elsewhere. Once cleaned, however, the rangefinder patch is best in class. It may be slightly feathered on the edges, but it also brings a lot of contrast and makes focusing a delight.
+
+Is it worth buying?
+
+If you’re able to track down this rare little gem, spend the time cleaning it or have a professional do it, because it really is worth the additional investment. The 40mm F. Zuiko lens has a wonderfully unique rendering to it; a 3D effect or pop that I’ve been unable to replicate with any comparable cameras in the class. Zuiko fans who love the images made with their OM Zuiko lenses should especially consider seeking out this fixed-lens camera.
+
+At a minimum, the Olympus 35 RD is a camera that can comfortably sit alongside the Canonet QL17 and Minolta Hi-Matic 7sii as one of the fastest compact, feature-rich, fixed-lens rangefinders of the era. Sure, it has its quirks, and its rarity might put it out of reach for most shooters. But if it can be found, cleaned, and adjusted, it might just earn a place on your shelf of keepers.

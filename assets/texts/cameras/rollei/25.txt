@@ -1,0 +1,5 @@
+The Rollei 6008 SRC Integral,
+
+aka the 6008i, is a relatively minor update of the SRC 1000. One of the complaints of the earlier 6000-series cameras was, when using 645 backs, it was almost impossible to shoot in portrait mode (using the 6000-series cameras sideways, especially with a waist-level finder, is quite awkward). The 6008i allows the latest 6000-series 645 magazines to be mounted either horizontally or vertically. Please note, these magazines currently work on the 6008i and 6001 cameras only. Also, the built-in motor drive’s continuous frame rate was increased to 2.5 frames per second.
+
+The optional Master Control Unit attaches to the 6008i’s grip mount, and can be used to control the camera remotely or to expand the camera’s capabilities, including additional AE control, second-curtain flash sync, an autmatic intervalometer, programmable self-timer delays, silent film advance, and other options. The 6008i is digital back ready.

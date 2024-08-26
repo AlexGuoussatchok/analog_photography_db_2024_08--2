@@ -1,0 +1,13 @@
+EOS 10s
+
+Introduced with EOS 10s were several advances that have found their way into subsequent EOS SLRs. The focusing control system as found on the 10s
+was enhanced considerably with the addition of Canon’s “Multi-Basis” system’s three focusing sensors, which provide the user greater flexibility for subject positioning and also improve tracking of moving subjects.
+
+The 10s autofocus modes include the “One-shot AF Mode” (focus-priority) and the “AI Focus AF Mode” (predictive, continuous autofocus). One program selection switches the AI Focus mode between one-shot and continuous, depending on whether or not the subject is moving.
+
+Exposure is determined either by an eight-zone evaluative metering system, due to the three active AF points, or by the partial-metering method, which places heavy emphasis on the center of the viewfinder. Exposure modes include program, shutter and aperture priority AE, depth-of-field AE, metered manual, Canon’s “Programmed Image Control” (PIC), which, on the 10s, includes four different preset exposure modes, and, a first for Canon back then, a bar code system. Using the optional bar code reader and bar code book, the user can program the 10s for special shooting situations.
+
+Other exposure features include: TTL flash with the built-in flash or accessory Canon speedlites, auto exposure bracketing, exposure compensation, multi-exposures and an interval timer.
+
+Shutter speeds range from 30 seconds to 1/4000, plus B, with flash sync occurring at 1/125. Other features include: DX film coding with override, a
+self timer, film transport speeds up to 5 fps with the built-in motor drive (up to 3.3 fps in AI Servo Mode), and auto film loading and rewind. The 10s has fourteen custom function controls that let the user tailor functions such as film rewind, DX coding, shutter-speed lock, depth-of-field check and, something that was missing from Canon’s lineup for way too long, a mirror lock-up feature.

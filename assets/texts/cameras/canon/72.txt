@@ -1,0 +1,5 @@
+EOS 650
+
+Available autofocus modes are one-shot (focus priority) or continuous (servo). Metering patterns include a six-zone evaluative pattern or partial area (6.5%). Exposure modes include a program mode that shifts automatically depending on the lens mounted, aperture and shutter-priority AE, metered manual and depth-of-field AE. Other features include interchangeable focusing screens, exposure compensation, DX coding with manual override, a self-timer, TTL flash, auto fill-flash, second-curtain flash sync and multi-strobe effects.
+
+Shutter speeds range from 30 seconds to 1/2000, plus B, with X sync at 1/125. The integral motor drive advances film at speeds up to 3 fps with auto film loading and rewind, and mid-roll film rewind.

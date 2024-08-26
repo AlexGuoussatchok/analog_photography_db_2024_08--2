@@ -1,0 +1,24 @@
+Maxxum 9
+
+The Maxxum 9, Minolta’s latest pro-level entry, represents a radical departure from its predecessors and, on the surface at least, appears to be an alumnus of the less-is-more school. Most noticeable on this camera is its pair
+of large and very grippable knobs, located where one would traditionally expect to find them, on the top deck of the camera. The left knob is used to adjust exposure and flash compensation, and the right one is used to set exposure modes and more. A bit more than a cursory glance, though, will reveal that this camera disguises its true capabilities and strengths.
+
+To arrive at the 9’s layout, Minolta took the time to interview a variety of pros, asking what they wanted in a camera, and to its credit, Minolta listened. As a result, there are some interesting dichotomies present. Yes, the camera is solidly built, as one would expect with a pro model. It’s thoroughly gasketted against dust and moisture intrusion. The tough, adhesive painted exterior houses an aluminum alloy mirror box, a zinc alloy bottom plate, and a stainless steel top plate. But it also features a popup flash (you pull up, you push down),
+of all things. As it turns out, neophytes aren’t the only ones who find pop-up flashes useful. They’re great for quick grab shots, especially when they will cover 24mm, and have a little oomph to them. They also make for nice fill flash work, as well. So, unlike other makers who decided to forego pop-up flashes, claiming that they were too fragile, Minolta decided to house the flash in the same stainless steel as it fabricated the top cover from.
+
+It turns out that the pros like lots of electronic features, too, but they don’t like having to memorize 95-page instruction manuals to learn how to access them. As a result, Minolta designed the knob, lever, and dial system found on the 9, so that accessing the camera’s many features would be intuitive enough to puzzle them out without the manual being an absolute requirement. OK, enough of this. Let’s take a look at what the 9 does.
+The 9 has three autofocus sensors -two vertical CCD side sensors and one crosshair-type CCD sensor in the center, providing the user with a wide focusing area. The camera will switch automatically between focus lock and continuous predictive AT based on subject movement. One can choose between auto or manual focus via a selector switch. As a further AT enhancement, the 9 also utilizes a near-infrared assist beam with a range of 24 ft 7.3 meters . The camera will select which sensor to use, or whether spot focus, or the user can select which sensor to use. The acm e sensor is
+indicated by an illuminated rectange. The default AT mode is focus-release priority, but this can be switched to shutter-release priority, if desired.
+
+Minolta's tried-and-true 14-segment metering system is used for evaluative. centerweighted. or spot metering. It will work in conjunction with the At sensors to insure greater exposure accuracy. There is also a four-beam flash sensor to handle TIL flash tasks.
+
+Exposure modes include program AE with shift, shutter- and aperture-pn-ority AE. plus metered manual with a twist. If you're familiar with the EY locks
+on Hasselblad Zeiss lenses, or the ones on certain Rolleitlex models, then you'll know right off what this is about. The idea is that, once one has determined correct exposure via manual selection of a shutter speed and an aperture setting, this EY can be locked in. Then the user can shift either shutter speed or aperture, and the other setting will follow along, within the given EY range. Autobracketing is available, and allows a range of choices. One can select 3, 5, or 7 frames in either 0.3, 0.5, 0.7, or 1.0 EY increments. Exposure data can be recorded, as well. The camera will remember up to seven 36-exposure rolls of data, which can include lens focal length, aperture and shutter speed, exposure compensation or bracketing, the exposure and metering modes, and more.
+
+The built-in flash will cover lenses down to 24mm and has a guide number of 39 in ft. at ISO 100. It can be used for fill flash and has a cancelable redeye reduction mode.
+
+Shutter speeds range from 30 seconds to 1/12,000 second, plus B, with a
+maximum flash sync at 1/300 second. The built-in winder features single shot advance, continuous advance at a frame rate of 5.5 fps, autoload, and autorewind. A nice feature permits midroll rewind so the cassette can be removed and then reloaded and advanced to the next unexposed frame.
+
+Other features include 21 custom functions, Minolta’s Eye Start system, DX film coding with override, a positive back release reminiscent of that found on
+the Nikon F2, a self-timer, and depth-of-field preview.

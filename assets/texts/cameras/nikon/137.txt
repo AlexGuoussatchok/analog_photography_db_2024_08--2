@@ -1,0 +1,15 @@
+The Nikon F4
+
+The F4 was marketed in two versions when new: the F4 and the F4s, the difference being the battery pack included with the camera. The F4s is the
+standard U.S. model. It has the larger battery pack/grip (the MB-21) that accommodates six AAs and powers the motor drive to a conservatively-rated 5.7 fps. The smaller MB-20 battery pack, which takes four AAs, is the standard battery pack in Japan and Europe, and is available as an option in the States. The F4 with the MB-20 is good for a top speed of “only” 4 fps, but the package is considerably lighter and more compact. A lot of folks opt for the MB-20 option to reduce weight. Another optional battery pack, the MB-23, was also a popular option. Still available, it allows the use of NiCads and offers increased performance over the MB-21, or so Nikon has claimed, but the motor’s maximum continuous rate is still the same as when using the MB-21. The MB-23 also adds another 5 ounces of weight to an already heavy system.
+
+The F4’s autofocus modes are one-shot (focus priority) and continuous (servo), with predictive autofocus. “Freeze focus” (trap focus) is available with the MF-21 Multi-Control Back. The camera has an AF lock button. Exposure modes include program, high-speed program, shutter and aperture priority AE, and metered manual. Metering options include Nikon’s acclaimed five-zone matrix metering system, 60/40 centerweighted averaging and a 5mm central spot selection. The matrix metering option switches automatically between two sensitivity pat-
+terns depending on whether the camera is held horizontally or vertically and will choose between four different metering programs: centerweighted, highlight-bias, shadow-bias, or a five-segment averaging method.
+
+Shutter speeds range from 30 seconds to 1/8000 (4 seconds to 1/8000 in manual mode), plus B and T, with X sync at 1/250. The integral motor has three continuous advance modes: hi-speed (5.7 fps), low speed (3.4 fps) and “silent” (1 fps), although “stealth” seems a more appropriate label for the latter. The motor makes this strange, subdued chugging sound as it sneaks the film to the next frame. Single frame advance is also available.
+
+Flash photography with the SB-24 or later Speedlights provides the user with a variety of TTL exposure options, including auto fill flash widi variable fill ratios, multistrobe effects, second-cur-tain sync and variable power levels. And, yes, Nikon did think to include a PC socket.
+
+Other features include interchangeable viewfinders and screens, interchangeable backs, DX film setting with override, multiple exposure capability, AE lock, exposure compensation, built-in diopter correction, an eyepiece shutter, mirror lock-up, a manual rewind option, depth of field preview, a rubberized body, moisture resistant seals and a whole lot more.
+
+The F4 accepts all F-mount Nikkor lenses. Focus confirmation is provided for with non-AT lenses. Matrix metering is possible with AI or AIs (non-AF) lenses, but when using non-AI lenses center-weighted metering is the only mode available.

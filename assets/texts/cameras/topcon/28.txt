@@ -1,0 +1,6 @@
+TOPCON RE300
+TOPCON RE300
+
+　In 1978, the RE200 underwent minor changes, and a mechanism that linked it to an autowinder was added to keep up with the times. This was the RE300, which was sold alongside the RE200 until the end. The main change was the addition of an automatic winding function, but the RE200's finder screen was a micro prism, whereas the RE300's split micro viewfinder screen was used for the first time. However, there are no other changes, and the construction, which uses a lot of plastic and cannot be described as high-end, remains the same.
+　In Japan, the RE200 was differentiated with a chrome body and the RE300 with a black body, but in other countries, both chrome and black bodies were sold together.
+　The auto winder for RE300 is written as "AUTO WINDER-II", indicating that it was released after the winder for Super DM, but the main body has a plate with the name "TOPCON" on it. It appears that it was designed with an export OEM model in mind from the beginning. This winder runs on six AA batteries, and although it is designed for single-frame shooting, it is characterized by its extremely fast winding speed of 0.3 seconds per frame.

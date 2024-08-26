@@ -1,0 +1,110 @@
+name: analog_photography_db
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+  cupertino_icons: ^1.0.2
+  intl: ^0.19.0
+  file_picker: ^8.1.2
+  pdf: ^3.10.7
+  permission_handler: ^11.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/databases/cameras_catalogue.db
+    - assets/databases/chemicals_catalogue.db
+    - assets/databases/dev_chart.db
+    - assets/databases/dryers_catalogue.db
+    - assets/databases/exposure_meters_catalogue.db
+    - assets/databases/films_catalogue.db
+    - assets/databases/film_scanners_catalogue.db
+    - assets/databases/flashes_catalogue.db
+    - assets/databases/lenses_catalogue.db
+    - assets/databases/processors_catalogue.db
+
+
+    - assets/images/cameras/agfa/
+    - assets/images/cameras/canon/
+    - assets/images/cameras/fuji/
+    - assets/images/cameras/konica/
+    - assets/images/cameras/kyocera/
+    - assets/images/cameras/lomo/
+    - assets/images/cameras/minolta/
+    - assets/images/cameras/minox/
+    - assets/images/cameras/nikon/
+    - assets/images/cameras/olympus/
+    - assets/images/cameras/pentax/
+    - assets/images/cameras/ricoh/
+    - assets/images/cameras/samsung/
+    - assets/images/cameras/spartus/
+    - assets/images/cameras/sunagor/
+    - assets/images/cameras/tanack/
+    - assets/images/cameras/topcon/
+    - assets/images/cameras/topshot/
+    - assets/images/cameras/vivitar/
+    - assets/images/cameras/voigtlander/
+    - assets/images/cameras/wzfo/
+    - assets/images/cameras/yashica/
+    - assets/images/cameras/zeis_ikon/
+    - assets/images/cameras/zenit/
+
+    - assets/images/developers/
+
+
+
+    - assets/images/dryers/ilford/
+
+
+    - assets/images/films/adox/
+    - assets/images/films/agfa/
+    - assets/images/films/ilford/
+    - assets/images/films/orwo/
+    - assets/images/films/tasma/
+
+    - assets/images/fixers/
+
+
+
+    - assets/images/flashes/canon/
+
+
+    - assets/images/lenses/asahi_pentax/
+
+
+    - assets/images/meters/minolta/
+
+
+    - assets/images/processors/jobo/
+
+
+    - assets/images/scanners/minolta/
+
+    - assets/texts/cameras/canon/
+
+    - assets/texts/developer/
+
+    - assets/texts/fixer/
+
+
+
+

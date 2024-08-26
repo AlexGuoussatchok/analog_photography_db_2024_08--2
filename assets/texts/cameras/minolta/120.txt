@@ -1,0 +1,45 @@
+The Minolta SR-7 is the first Minolta SLR to have a built-in exposure meter. In fact it was the worlds first 35mm SLR with a built in battery operated CdS-meter when introduced in 1962, and at the time Minolta's top of the line SLR camera model, usually equipped with the superb Auto Rokkor-PF 1:1.4 f=58mm multicoated standard lens with a depth-of-field preview lever. The meter is of the dual range variety, having a low and a high range selected by a push button, situated early on at the rear, and later, on model V, to the left of the lens mount on the side of the mirror housing. The meter reading, to be manually transferred to the lens aperture ring, is shown in a window next to the rewind knob at the top of the camera. The film speed is set on the shutter speed dial by lifting and turning to outer collar.
+
+There are several versions of this camera, the most significant improvement is the 1965 revised body style, the SR-7 model V, which was also the basic body-style for the Minolta SR-T 101 to be introduced the following year. The improved style is recognized by the fact that the stepped shoulders on the camera body are removed. The camera has a built-in 10 seconds delay self-timer mechanism and features a mirror lock-up dial situated on the right-hand side of the mirror housing. The camera body design is particularly clean, having no integral accessory shoe at the top of the prism housing. The shoe was supplied as a separate item to be fixed to the camera using the viewfinder window frame, the early models having a screw-on fixing ring and the later ones a square push on fixture with a locking device.
+
+---------------------------------------
+
+Minolta is the brand with a model number capable of marketing the very latest in camera technology. Just look at the appeal of a Minolta 7, in all series, this is the camera that sets the tone in the industry. Actually, this has remained true even after the takeover by Sony in 2006, because there too the 7 series is the big sales success. In 1962 the same was true of the then SR-7, the very first SLR camera with a CdS light meter.
+
+Let’s first start with that CdS sensor, the successor to the common selenium metering that operated without any batteries. They relied on the ‘photovoltaic effect’: the conversion of light into electricity using semiconducting materials: light is measured as its electrical resistance in response to the brightness of the scene. Minolta used the first CdS meter in a SLR. The difference is that selenium cells generate their own electricity and CdS sensor meters require a battery. They use a ‘photoresistor’- sensor whose electrical resistance changes proportionately to light exposure. The resistance of a photoresistor decreases with increase in incident light intensity. It is still to compare to the modern handheld light meters that precisely measure the light falling on various parts of their subjects.
+
+
+
+
+Minolta SR-7 front
+This longer introduction on light metering is necessary to explain the relative success of the Minolta SR-7. The early 1960s may be counted as the rise of the SLR, with eventual flagships such as the Nikon F. The ‘7 ‘builds on the success of the SR-1, SR-2 and SR-3, but with small incremental improvements. For each small addition, a new model was introduced. The move to the 7 was revolutionary, a built-in light meter. What is unfortunate in retrospect is that the SR series has fallen into the shadow of the many times more popular SR-T series starting in 1966. With that series, Minolta managed to build the ultimate fame: TTL light metering, hot shoe, multi-exposure capability, and the aperture value visible in the viewfinder.
+
+
+
+
+Minolta SR-7
+What is unfortunate in retrospect is that the SR series has fallen into the shadow of the many times more popular SR-T series starting in 1966. With that series, Minolta managed to build the ultimate fame: TTL light metering, hot shoe, multi-exposure capability, and the aperture value visible in the viewfinder. There is fortunately a small fan base of loyal fans who enjoy the older SR series. I am among them. The camera is what you call really a vintage version with that coupled exposure meter. It is a rock-solid, purely manual SLR with only a PX battery for the light meter (available in 2022 as Wein Cell MRB625).
+
+
+
+
+Minolta SR-7
+So how does it works? As you can see, there is an interesting (and so nice vintage) rectangular window that shows the apertures and a red needle. First (on this later model) you have to switch on the battery at the bottom of the camera. Then you have to understand that the exposure meter is (only) coupled to the shutter speed dial. So changing shutter times will react with the aperture shown in this window. A nice mechanical feature! On the back under the window is the so called “meter lo/hi” switch.  It means the sensor can meter for low and high sensitivity. Normal use or “lo sensitivity” mode means good lightning conditions outdoors and in well lit indoor scenes. With the battery turned on, you can see the metering and the needle will tell you the right aperture in regard to the chosen speed. Changing the shutter speed now tells you the needed aperture for correct exposure. This is also influenced by the coupled ISI/ASA filmspeed selector under the speed dial. So you get a lot of possibilities here for correct exposures (ASA 6 – 3200). If the light conditions ask for more sensitive reading (Hi) you can press and hold the Lo/Hi button and meter on a different ribbon that is shown in the window. Just make sure you adapt the aperture (or speed) manually.
+
+
+
+
+Minolta SR-7
+In use, the Minolta is a nice uncluttered and easy-to-use SLR. Full mechanical shutter speeds from 1/1000 to B with relatively many settings for slow speeds such as 1/15, 1/8, 1/4, 1/2 and 1s. A self-timer next to the lens is also provided (which in B mode acts for a 2s exposure). Notable in the beautiful design is the single stroke lever the with a curve fits exactly into the shutter dial. Next to it is the automatic counter. The ISO/ASA settings can be set by pulling out the outer ring of the shutter button. On the opposite side of the top plate is the recoil button. In the center is a (detachable) cold shoe for assesoires. The viewfinder image is large and bright. There is a fresnel round in the center to facilitate critical focusing. On the front is a dual PC port for flashbulbs (FP) and electronic flash (X) with a sync time of 1/50s. There is also a mirror lock button meant for use with the 21mm Super Rokkor lens so the back of the lens does not touch the mirror. But it also can be used for continuous or low noise photography, although you cannot use of course the focussing screen. There is also a lever right under the lens for controlling the Depth Of Field, by pressing it, you can get a preview of the chosen aperture with closed aperture blades. Inserting the film is easy. For that you lift the rewind button and the back opens like in almost all modern SLRs. More info you can read in the manual at Butkus. On the back is another nicely designed mnemonic in the form of a dial for the film roll iso value. On the bottomplate you ll find the unlock button for rewinding the film, the battery cover and on/off switch and the tripod connection.
+
+
+
+Minolta SR-7
+Minolta SR-7
+What about lenses? For most obvious reason (as with mine) you find classic Minolta camera’s often with the stellar performer of the era: the Auto Rokkor PF 58mm F1.4. Not a very common focal length, but a legend. Of course primarily it is a very fast lens. But more interesting there were no Minolta standard 50 mm lenses when the camera came out. There were wide angles 21mm, a 28 and a 35mm and the famous 55mm as ‘standard lens’. The fast 58mm was introduced in 1961 and became the ‘kit’ lens. Nowadays it is considered the ‘real’ Minolta classic, but never got the fame of the later, much acclaimed MCII version from 1969. The lens is soft at f/1.4 but it is regarded perfectly for portraits wide open. By f/2.8 – f/4 the sharpness really starts kicking in. to come on. In general, optics and build quality is superb. And it is one of the affordable gems on eBay:) and easily to adapt to digital DSLRs.
+
+
+
+Minolta SR-7 review
+Minolta SR-7
+With the SR-7, Minolta laid the foundation for the SLR as we would find it for decades with all the major brands. As all of Minolta’s “7” series have done in perpetuity, usually leading the way in leading-edge, innovative technology copied by others. As a result, the ‘7’ models through time have great collector’s value, rightly so because they take us by example through the development of any camera.

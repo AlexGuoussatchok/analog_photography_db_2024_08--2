@@ -1,0 +1,16 @@
+Overview
+I like this camera. I'd been tempted to get one many times but never seemed to be able to bring myself to buy one, thinking that it wouldn't be as sophisticated as the Electro. Eventually one fell into my lap, more or less -- it was a donation from a generous admirer of the site (thanks Jay!)
+
+The Lynx 1000 appeared before the 5000, notable in 1960 for its extremely fast Copal leaf shutter. Then came the 5000 with a CdS meter replacing the 1000's selenium meter. The later 5000E has Electro-style electronic metering replacing the galvanometer, and the Lynx 14 and 14E have a giant, heavy, 7 element 1.4 lens instead of the 1.8 lens found on the 5000.
+
+The build quality is excellent, it's got that solid early 60s overengineered feel to it. It's about as big as a small SLR. Operation is fully manual, but there's no shortage of speeds and apertures, and the meter is accurate. In fact this is the fastest leaf shutter I've ever seen, it goes from 1/1000 down to 1 second. M-X switch for bulbs or instant, leave on X of course. And because it's a leaf shutter it syncs at all speeds. No hotshoe though.
+
+Repairs
+Part of the rangefinder glass had come unglued and was rattling around, I glued it back and cleaned all the non-colored glass. The top is easy to get into: point spanner removes the wind lever cover, rewind knob unscrews when you stop the fork with a screwdriver or other bar, then just two screws to remove (the middle back screw is a cover for the rangefinder adjustment).
+
+Tips & Tricks
+The CdS meter is activated by a button on the front of the camera, and shows the over/under needle both on the top of the camera and in the viewfinder. The meter runs on an obsolete 1.3v mercury PX625 battery, but you can use a 1.5v alkaline and adjust the ASA to 1/2 actual to compensate, or use a 1.4v hearing aid battery and space it with a small #9 faucet O-ring if necessary.
+
+
+
+Aperture and shutter speed are semi-coupled on the lens barrel, resulting in a cool feature that could really throw you off if you aren't paying attention. Once you've selected an aperture & f-stop combination, turning the shutter ring also turns the aperture ring, so your exposure stays constant, only your depth of field changes.... Try it and see what I mean.

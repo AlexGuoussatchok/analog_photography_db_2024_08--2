@@ -1,0 +1,8 @@
+Maxxum 5000i
+
+The 5000i is a scaled-down little brother to the 7000i with many of the same features. Its wide area array of focus
+sensors provide one standard autofocus mode: one-shot (focus priority). Continuous AF is possible with the “Sports Action” Creative Expansion Card. Its exposure modes include program and metered manual. Shutter and aperture priority AE modes are available with optional Creative Expansion Cards. Metering choices are two-zone evaluative in the program mode or center-weighted averaging in the manual mode. Shutter speeds range from 4 seconds to 1/2000, plus B with an elapsed-time indicator.
+
+The 5000i has a built-in flash (GN 50 @ ISO 100) that fires only in low-light and backlit situations when in program and shutter-priority AE, but it fires with every shutter release in aperture-priority AE and manual exposure modes (sounds like a bug in the software, doesn’t it?). The camera has an i-series hot shoe that accepts only i-series units. As with the 7000i, it will take an adapter that will allow the user to mount standard ISO flash units. Flash sync occurs at 1 /90.
+
+Other features include the line of Creative Expansion Cards as mentioned with the 7000i above, AE lock, a self-timer and an integral motor drive with single frame advance, auto film loading and rewind. Film is DX coded with no override capability.

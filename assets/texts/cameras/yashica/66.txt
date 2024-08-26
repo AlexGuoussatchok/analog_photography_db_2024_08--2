@@ -1,0 +1,14 @@
+Yashica 300 Auto Focus
+
+Kyocera’s latest entry into the super-competitive amateur autofocus SLR market is the Yashica 300 Auto Focus (for the balance of this description, we’ll refer to it as the 300 AF). It is a sleek-looking camera, just what you might expect from the same company that produces the Contax, and it is a capable camera, with a sufficient array of features to satisfy most amateur’s needs.
+
+The 300 AF has a 3-speed power zooming feature with the new AF Power Zoom lenses. The zoom rate is controlled by how firmly one twists the zoom ring: a light pressure will cause it to zoom at the slowest rate, a moderate pressure will bump the rate up a notch, and rotating it to its stop will engage the high speed zoom mode. There is also a manual zoom override.
+
+The autofocus system employs a single CCD sensor and provides the user with three AF modes: standard, continuous predictive autofocus and trap focus. In addition, the camera has a 3-step AF zone selector, allowing you to select a range in which the AF system will operate. Also included is a near-infrared focus assist beam for reliable autofocus in low-light.
+
+Exposure modes include program AE with a 3-selection shift, aperture- and shutter-priority modes, a metered manual mode and automatic backlight compensation. Exposure compensation is also available: ±2 EV in half-stop increments. The metering system employs centerweighted averaging.
+The 300 AF has a built-in pop-up flash (GN 39 @ ISO 100 in feet) with an angle of coverage down to 35mm, and will also accept optional dedicated TTL units, such as the CS-240 or CS-250. Flash exposure modes include auto fill-flash and slow shutter flash in addition to
+the standard TTL mode. A pre-flash function for red-eye reduction is also available.
+
+Other features include AE Lock, a self-timer, a built-in winder that provides single frame and continuous advance at speeds up to 2 fps, auto film loading and
+rewind, mid-roll rewind, DX film coding with no override, capability to attach the optional DA-5 data back, and a panoramic adapter which stores in the camera back.

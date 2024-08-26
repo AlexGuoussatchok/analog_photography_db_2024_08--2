@@ -1,0 +1,17 @@
+Overview and Personal Comments
+The Yashica Lynx 14 is a coupled-rangefinder, leaf-shuttered 35mm camera with a built-in coupled lightmeter for full-manual exposure and an astonishingly bright 50mm f1/.4 lens. The Lynx 14 was designed as an available light, high-end version of the Lynx 5000, which had a more mundane 45mm f/1.8 lens. Using the text or images on this website without permission on an ebay auction or any other site is a violation of federal law.
+
+The Lynx was released in 1965 by Yashica. The serial number of my body is #LIII 7121155 and it was made in Japan. The lens is a huge Yashinon DX 1:1.4 f=45mm lens made in Japan. It retailed in 1965 for ¥24,000. The exchange rate was fixed at ¥360/US$1 so that comes out to US$66. Taking inflation into account with the AIER calculator, that's $377 in 2002 dollars. So it was on the expensive side, perhaps a "prosumer" model, but certainly not out of the reach of the average person.
+
+ 
+
+ 
+
+Interesting quirks
+The Lynx 14 features a huge 50mm f/1.4 lens. Even now, that aperture lens is rare for a rangefinder, especially a fixed lens rangefinder. Furthermore, Yashica spared no expense, the lens is a 7 element, 5 group high quality design that is optimized for available light shooting. Because the lens is so large, the camera takes 58mm filters and weighs a ton (850g).
+
+The Copal SVE shutter ranges from 1/500 to 1 seconds. It's not through-the-lens TTL metering, the metering cell is located by the rangefinder, right by the "Yashica" logo plate. Unlike the Electro series, the Lynx 14 shutter is fully mechanical and fully manual. Metering is match-needle with an analog needle (see photo below). The Lynx 14e ("IC" for Integrated Circuitry) which followed the Lynx 14 featured match-LED metering in much the same physical format.
+
+The Lynx 14 takes the now discontinued PX 625 mercury batteries. I'm not sure if it is alkaline 1.5v compatible as I have my own stash of mercury batteries. My guess is that you'll most probably have to use an adaptor or adjust the ISO. See my battery page for more details.
+
+The rangefinder is not only fully coupled (i.e., focusing the rangefinder focuses the lens) but it also has built-in parallax compensation. The common problem with rangefinders is that they aren't fully What-You-See-Is-What-You-Get because of the small amount of parallax difference between the rangefinder window and the taking lens. With the Yashica, as you focus closer, the viewfinder gridlines actually move to compensate for the amount of parallax. This is important when taking headshots or pictures of found objects.

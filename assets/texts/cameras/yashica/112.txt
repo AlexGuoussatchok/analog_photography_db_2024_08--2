@@ -1,0 +1,37 @@
+
+
+This is a rangefinder camera from Yashica that is pretty standard for its time.  It is almost exactly the same size as Zeiss Ikon’s Contessa LKE of the same period and looks very similar as well. It is slightly larger than Voigtlander’s Vitomatic II which is slightly earlier.
+
+lens:  Yashinon-DX
+focal length:  45 mm
+apertures: f/2.8 to f/22
+focus range: 0.8 m (2.6 ft)
+lens fitting: fixed
+shutter: Citizen
+speeds: 1 s to 1/500 s
+flash: PC socket
+film size: 35mm
+The camera is quite heavy – 656g including a 24 exposure cassette of film. This weight is going to tell at the end of a busy day photographing. It is 135 mm long and 85 mm high. The body is 35 mm thick which increases to 85 mm when the lens is included.
+
+Yashica Minister III
+There are not many controls on this camera – it is entirely manual. On the top plate, starting on the left, is the rewind crank. This also pulls up to release the cassette for loading/unloading. Next to this is the accessory shoe. In flash terms, this is a cold shoe. next to this is the meter dial. This has two components: ASA setting and meter read-out.  ASA can be set between 10 and 400 ASA (new style). Behind this is the read-out for the meter. This gives you EV numbers between 4 and 18. In use, you choose the EV number the needle is pointing to and transfer this number to the outer most ring on the shutter housing. You are quite at liberty to ignore this if you want to – if you are using a hand-held meter, perhaps – or using the flash.
+
+Next in line is the shutter release button, which is towards the front of the top plate. This is a small (by modern standards) chrome plated button, threaded for a standard cable release. Beside this is the film advance lever. Right on the right-hand end of the top plate is the frame counter. This is automatically reset when you open the back and counts up from 1.
+
+The front of the camera has the viewfinder and rangefinder windows and the shutter housing with lens. The viewfinder is quite large and bright and has bright-line frame lines. In the centre of the viewfinder image is the yellow rangefinder spot. This is plenty large enough without getting in the way and is nice and bright. The rangefinder is coupled to the lens.
+
+The shutter is made by Citizen – no model name is given – and it is a leaf shutter. The shutter housing is fairly large and central.  Partly, it looks large compared to Compur and Prontor shutters of the period as it is straight sided rather than stepped. There are three adjustment rings on the housing. The inner most, marked in green, is the focussing ring. This focusses from 0.8 metres to infinity and is marked in both metres and feet. Strangely, there is no pointer for this scale and the pointer position (where the pointer would be if there was one) is well to the right of centre. I suspect the designer thought there was no need for a pointer as the user is intended to use the rangefinder but I would be more comfortable if there was one.
+
+The outer most adjustment ring, marked in red, is where you set the EV numbers from the light meter. Even though the meter only offers numbers from 4 and higher, the ring is marked for 2. Setting this ring gives the user a range of both shutter speeds and apertures. Once the EV number is set, you can rotate the middle adjustment ring – the shutter speed ring – to change the shutter speed. Doing so also alters the aperture so that the required exposure is maintained. There is no direct method for adjusting the aperture, but there is a small window immediately behind the shutter speed ring showing the set aperture. If you want a particular aperture (which I usually will) you can alter the shutter speed until the desired aperture is displayed in the window.
+
+9c0b5-_mg_8550On the base of the shutter housing is a small lever which sets the delay timer. Although we are always told not to use this on an old camera, I can report that it works very well on this particular old camera.
+
+In the front of the shutter housing, around the lens, is the light meter sensor. This is a selenium sensor and so needs no battery – there is no problem with this camera of having to find a replacement for an obsolete mercury battery. Many ‘experts’ will tell you that old selenium meters are too unreliable to be worth using. This is based on the fact that the light sensitive surface deteriorates with time and then gives low readings. While this is true, if the meter has been kept in the dark except when being used the deterioration over 60-odd years is so slight as to present no problems. I have many selenium meters that are 60-odd years old and they all give accurate readings and I shall continue to use and trust them. I doubt those ‘expert’ who decry using old selenium meter have actually tried using them.
+
+The advantage of having the light meter sensor around the lens is two fold. Firstly, it is always pointing in the same direction as the lens and secondly, if a filter is used, it fits over the sensor and no adjustment of the meter reading is required.
+
+The lens is a Yashinon-DX lens (I do not know the significance of the ‘DX’  I have been told by Flickr’s ‘busy Pochi’ that the DX signifies a multicoated lens). This lens has five elements in four groups and is reputed to give very good results. The focal length is 45 mm so the angle of view is very close to the human eye and accordingly will give natural looking results. The largest aperture is f2.8 which might not seems to be particularly fast, but, to be honest, I never shoot much wider than f8 so I just do not care that the lens does not go to f/2 or f/1.8
+
+This camera has a PC (Prontor-Compur) connector for the flash and this is, idiosyncratically, place on the left-hand end of the camera.
+
+The base plate of the camera has the usual tripod boss – this is the 1/4 inch Whitworth thread – and it is placed centrally behind the lens which means the camera will be stable when on a tripod. Also on the base is a recessed button to free the internals for film rewind and, at the opposite end, a recessed button for unlocking the back. I find this hard to use – you need to slide it to one side and then press it in. Perhaps with time I will find it natural, but not yet.

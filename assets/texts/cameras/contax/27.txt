@@ -1,0 +1,14 @@
+Contax RX
+
+One must be familiar with Contax’s tenacious adherence to manual focus technolog)' to appreciate the milestone the Contax RX represents. The engineers at Contax have finally conceded that a focus-assist feature, called the Digital Focus Indicator on the RX, could be of some value. Contax still draws the line at autofocus, though, claiming that the Zeiss T* lenses cannot be enhanced by adding autofocus capability, mostly due to weight and focus accuracy. The RX nevertheless represents a fundamentally new direction for Contax, so let’s take a look at what they’ve come up with.
+
+The RX bears a strong resemblance to the ST. Its body components are made from the same materials, the same type of precision drive motor system is used; the same metering components and oversized pentaprism are found in the RX as in the ST. But the differences between the two cameras are considerable.
+
+The RX’s Digital Focus Indicator (DFI) function is a unique focus-assist system that uses the principle of the Circle of Confusion to determine best focus. Put simply, the circle of confusion is the minimum size of a light source when projected onto the film plane. Have you ever noticed how, when you defocus a lens in either direction, the image not only blurs but grows in size? That’s the principle at work here. The RX is able to determine the minimum size of the subject at the point of focus, and as a result is able to indicate when critical sharpness has been reached. The RX also has two Focus Indicator Scale modes. Not only will the DFI render the subject in absolute focus, but it can also provide the user with a depth of field scale, showing an acceptable focus range and where within that range the point of focus lies. For the photographer who prefers focus accuracy over focus speed, the RX, with its DFI system, could be just the ticket.
+
+The RX has six exposure modes: aperture preferred AE, shutter preferred AE, program AE, manual, TTL auto flash AE and manual flash. Also found on the RX is Automatic Bracketing Control, which will bracket three shots either in single or continuous frame advance in ‘/2 EV increments. AE lock, ±2 EV exposure compensation and second-curtain flash
+sync with dedicated TLA flashes are also available.
+
+The user can select between two metering systems: centerweighted averaging and spot. Shutter speeds range from 16 seconds to 1/4000 second (4 seconds to 1/4000 in manual and shutter preferred AE), with X sync occurring at 1/125, plus B. The RX can be personalized, as well, with a selection of nine user-defined Custom Functions to choose from.
+
+Other features include a self-timer, DX-film coding with override, dioptric adjustment, interchangeable focusing screens, auto film loading and rewind with mid-roll rewind available, single or continuous frame advance (speeds up to 3 fps), a PC connector, a built-in data back that prints data between frames and a depth-of-field preview button.

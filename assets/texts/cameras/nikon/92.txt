@@ -1,0 +1,5 @@
+Nikon N2000 & N2020
+
+The N2000 was Nikon's first 35mm SLR with a built-in motor drive and the second Nikon to support the “s” feature of AIs lenses. Its centerweighted metering pattern is used for all four exposure modes: standard program, high-speed program (AIs lenses are necessary to engage this function), aperture-priority AE and metered manual. Other exposure features include TTL flash metering with dedicated flash units, an AE lock and exposure compensation. Shutter speeds range from 1 second to 1/1000, plus B, with X sync at 1/125. Other features include DX film coding with override, a self-timer and, as was mentioned above, an integral motor drive that has continu-
+ous speeds up to 2.5 fps. The motor features auto film loading, but film must be rewound manually.
+Nikon’s second autofocus SLR, the N2020, is an N2000 with the addition of two autofocus modes: single shot (focus priority) and continuous (servo). All AF-Nikkors will autofocus on the N2020 (except those for the F3AF and some of the D-type AF Nikkors). Focus confirmation is provided for with AJ’d, AI, or AIs lenses.

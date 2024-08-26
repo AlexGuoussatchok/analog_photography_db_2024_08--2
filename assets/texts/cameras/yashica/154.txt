@@ -1,0 +1,65 @@
+Manufacturer description #1
+Type: 35 mm focal-plane type AE single-lens reflex camera.
+
+Image size: 24 x 36 mm.
+
+Lens mount: Contax/Yashica mount.
+
+Shutter: Electronically controlled, vertically moving, metal focal plane shutter (quartz-oscillator timed).
+
+Shutter speeds: Auto: 11 seconds - 1/1000 second; Manual: X synchronization (1/100 second); B (Bulb).
+
+Synchro contact: Direct X contact ("hot-shoe"), synchronized for flash at 1/100 second. When used with CS-210 Auto, TLA30, or TLA20, automatic setting at 1/100 upon recycling of the flash unit.
+
+Auto flash control: When used with CS-201 Auto Flash Unit, shutter speed automatically set at 1/100 sec. upon full charging of the flash unit.
+
+Self-timer: Quartz-timed electronic self-timer. Operating time: 10 seconds. Operating indicator: Timer LED flashes (flashing cycle speeds up last two seconds before shutter release). Can be cancelled during operation.
+
+Shutter release: Real Time Electromagnetic Release System; auxiliary remote release via "Release Socket" (electronic accessory connection).
+
+Exposure control: Through-the-lens (TTL), center-weighted metering at full aperture. Aperture-priority AE type. Light metering element: SPD (silicon photo diode). Metering range: EV 1 - 18 (ASA/ISO 100, with F/1.4 lens). Film speed setting range: ASA/ISO 25-1600.
+
+Exposure meter: Meter turns on when shutter release button is pressed partway (displays light for 10 seconds), LEDs displayed in viewfinder.
+
+AE lock: Lever type (locks shutter speed at time of setting).
+
+Exposure compensation: +/- 2 EV (by film speed dial).
+
+Viewfinder: Eye-level pentaprism type; field of view shows 95% of film-exposure area; 0.86x magnification (with 50 mm normal lens set at infinity).
+
+Focusing screen: Horizontal split-image/microprism type.
+
+Viewfinder display: Exposure display: 15 red LED array for correct shutter speed indication including over- and under-exposure LED indicators; dedicated flash ready signal (green LED); shutter speed indicators.
+
+Film advance: Lever type, with 130 deg. film advance stroke, 20 deg. standoff position.
+
+Film Rewind: Film rewind crank and rewind release button (automatic resetting type).
+
+Exposure counter: Count increasing oredr, automatic resetting type.
+
+Accessory shoe: Direct X contact ("hot-shoe") type, with terminal for coupling flash unit.
+
+Camera back: Opens by lifting film rewind knob.
+
+Power source: Uses 2 1.55 V silver-oxide batteries (Eveready S76, Ucar S76, Mallory MS-76 or equivalent), or 1.5 V alkaline-manganese batteries (LR44 or equivalent).
+
+***
+
+The FX-70 Quartz is an easy-to-operate automatic exposure (AE) single-lens reflex camera. This camera includes a high-precision, quartz/digital-controlled automatic exposure mechanism, convenient AE Lock, viewfinder with easy-to-read information, and electronic self-timer. In addition, automatic flash exposures can be taken when the camera is used with the dedicated electronic flash unit "CS-210 Auto".
+
+Manufacturer description #2
+The exciting new Yashica FX-70 Quartz makes photography faster, easier and more fun than ever thanks to a host of convenient features that start with accurate, aperture-preferred Auto Exposure and include Quartz-timed shutter speeds, SPD light metering and an energy-saving LED viewfinder data display.
+
+Basic Features - The FX-70 Quartz provides all the basic requirements for outstanding photography in a compact body contoured to handle quickly and smoothly. Its AE control system insures accurate results under virtually any lighting conditions, while requiring the photographer only to set the desired aperture. A sophisticated electronic microprocessor within the body takes care of balancing all exposure factors to determine precisely the shutter speed that will give optimum results.
+
+Then, that shutter speed operates with the accuracy and consistency available only from Quartz timing, in a stepless range from 11 sec. to 1/1000 sec. - fast enough to freeze any action. The metal, vertical-travel focal plane shutter provides exceptional durability and reliability, as well as allowing high speed synchronization of electronic flash at 1/100 sec. with Yashica CS-210 Auto or Contax TLA30 Electronic Flash. Since the exposure determination is made according to a center-weighted TTL metering pattern by an ultra-sensitive Silicon Photo Diode, the photographer can be certain of obtaining exactly the results that best show off the subject.
+
+Camera Controls - Control of the FX-70 Quartz is extremely simple. The Main Switch for the camera's electronic circuitry includes Off, Auto, "X" and "B" positions. The electromagnetic shutter release (which accepts Contax off-camera control systems) is automatically locked whenever the switch is Off. "X" and "B" provide special settings for manual use of X-synchronization (set automatically with the dedicated CS-201 electronic flash) or Bulb shutter speed. At Auto, the camera's aperture-preferred AE system goes to work.
+
+Viewfinder Display - Slight pressure on the shutter release activates a viewfinder LED data display for 10 seconds. The display shuts off by itself to conserve battery power, but can be turned on again simply by lightly touching the release once more. Included in the display are 15 dot-LEDs showing shutter speed, over/under-exposure warnings, flash-ready and indication of AE Lock use. Other controls include an AE Lock lever to freeze shutter speed (for overcoming extreme backlight) and a combined ASA/ISO and Exposure Compensation Dial providing ±2EV compensation. An electronic Quartz-timed 10-second delay Self-Timer (cancellable/resettable) indicates operation by a flashing red signal light on the camera body. Film advance is via a manual lever employing a 130 deg. single-stroke action with a convenient stand-off angle for quick reaction.
+
+Focusing - The eyelevel pentaprism of the FX-70 Quartz ncorporates a viewfinder showing 95% of actual picture area at 0.86X magnification. The focusing screen includes a horizontal split-image focusing aid surrounded by a microprism collar. This makes focusing accurate and easy, even for those wearing eyeglasses.
+
+System Accessories - The Yashica/Contax bayonet lens mount allows use of all Yashica brand lenses, or the choice of the superior Carl Zeiss T* lens group, for exceptional reproductive capability. The wide range of lenses available includes wide angle optics for expanded perspective, telephoto lenses that can expand distant detail, zoom lenses that provide smooth, easy shifts in both perspective and composition and a number of special purpose lenses, such as macro, fish-eye, bellows, medical and surveillance optical systems. This allows the FX-70 Quartz to be employed as a basic SLR for beginners or amateurs, but to retain the versatility for use as a second camera by those who have advanced to professional-level capabilities. The full range of Yashica and Contax brand Macro/Close-Up accessories can also be employed, including auto extension tubes, auto bellows units, slide copier, macro stand and even a microscope adapter. The electromagnetic shutter release allows use of off-camera control equipment, such as the Contax Cable Switches which eliminate the problem of camera shake (the primary cause of bad pictures). The Contax Infrared Controller S Set even allows completely "no hands" photography at distances up to 20 meters. For remote control at even greater distances, the sophisticated Contax Radio Controller Set is available.
+
+Creative Versatility - The new Yashica FX-70 Quartz is an extremely easy camera to use - fast, responsive and versatile in performance and capable of handling virtually any photographic chore. It is the perfect choice for those interesting in obtaining maximum performance and quality at a high level of cost-efficiency, since it is capable of performing so many roles with extreme effectiveness.

@@ -1,0 +1,10 @@
+EOS 700
+
+The EOS 700 was released after the EOS 750. The two cameras look similar, but shouldn’t be confused. The EOS 700 is an entirely different camera with a broader array of features.
+
+The autofocus system used in the 700 is similar to that used in the 630,
+ensuring rapid autofocus. Two modes are possible: one-shot (focus-priority) or “One-Shot/AI Servo Automatic Changeover.” The latter selection will switch automatically from single shot to continuous predictive autofocus based on subject movement.
+
+Exposure options, using the six-zone evaluative metering pattern, include the same program mode as the 650’s, depth-of-field AE, and Canon’s “Programmed Image Control” with 8 settings, Shutter-priority and TTL programmed flash with the built-in flash or other EOS speedlites. Shutter speeds range from 2 seconds to 1/2000 (l/i -1/2000 in shutter-priority), with flash sync at 1/125.
+
+The 700 uses the same film prewind system as in the 750/850 and, like them, has DX film speed settings only with no manual override. The built-in motor winds the film at speeds up to 1.2 fps.

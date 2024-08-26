@@ -1,0 +1,8 @@
+Maxxum 7000i
+
+The 7000i’s autofocus system features the following: it will switch automatically between continuous and one-shot, depending upon subject movement. Predictive focus was added, which allows the camera to track a moving subject, anticipating its location at the time of exposure. It has a wide-area, three-element array of focus sensors, sensitive to both horizontal and vertical subjects.
+Exposure modes are program with shift, aperture and shutter priority AE, metered manual and TTL flash with auto fill flash, variable fill ratios and multi-strobe effects when using i-series flash units. The i-series Minoltas’ hot shoes will accept only i-series flashes, although Minolta does make an adapter that will allow use of standard ISO flashes. Metering modes include a six-zone multi-pattern evaluative mode and 2.3% spot, with standard centerweighted metering available in the manual exposure mode. Shutter speeds range from 30 seconds to 1/4000, plus B, with X sync at 1/125.
+
+Other features include exposure compensation, a standard PC socket, multi-exposure capability, DX film coding with manual override, a built-in motor drive with film advance speeds up to 3 fps, and auto film loading and rewind.
+
+A feature introduced with the 7000i is Minolta’s Creative Expansion Card library. The Creative Expansion Cards are plug-in modules that will customize the camera for fine-tuned control over such exposure situations as autobracketing, program shift, fantasy effects, data memory, highlight/shadow biasing and more.

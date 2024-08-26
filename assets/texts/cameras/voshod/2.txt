@@ -1,0 +1,17 @@
+Prototype 35mm camera for full frame STEREO pairs, with a switch on the top plate for selecting MONO.
+
+Centered viewer with projected frame lines, selenium meter needle indicator, and pendulum horizon indicator in the center, all projected using the van Albada type viewer.
+
+Single lever wind and cocking mechanism for both shutters.
+
+Frame counter
+
+individual shutter speed selectors, the shutter/lens assemblies come from the Voshkhod. shutter releases and diaphragm settings coupled between the lenses.
+
+Individual focusing of the two T-48 2.8/45mm lenses.
+
+75mm interlens distance.
+
+Accessory shoe.
+
+Contax-type removable back with adjustable pressure plate. Built-in film cutter like the Exakta.

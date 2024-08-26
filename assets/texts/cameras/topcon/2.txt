@@ -1,0 +1,6 @@
+TOPCON
+UNI
+
+　The world's first TTL-EE single-lens reflex camera, released in 1964. The Konica FTA is often introduced as the first TTL-EE machine, but it was actually four years earlier. Although the shutter type is different, the shutter-priority automatic exposure mechanism is the same, and it is only fitting that the title of ``first'' shines above Uni's head.
+　The body skeleton is the same as the Wink Mirror S, and it is one size larger than the old Wink Mirror. The light shielding plate is not of the type that is placed directly in front of the film surface like Wink Mirror E to prevent the film from lifting, but is placed diagonally behind the mirror, and this plate is raised along with the mirror. .
+　The TTL mechanism is Topcon's specialty mirror meter type, in which the CdS plate on the back detects the light that passes through a slit carved into the mirror. However, unlike the RE Super, the slit design is not evenly carved all over the mirror, but rather closer to the center.

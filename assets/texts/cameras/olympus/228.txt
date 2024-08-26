@@ -1,0 +1,6 @@
+Olympus OM-77AF
+
+The OM-77AF’s autofocus modes are single shot (Focus priority) and continuous (servo). It will manual-focus AF lenses in the “Power Focus” mode only. Exposure options include a program mode, which adjusts for lens focal length, a shift function, aperture-priority AE and AE lock. Shutter speeds range from 2 seconds to 1/2000, with X sync at 1/100. When using the F280 Full Synchro Flash, flash photography is possible at all shutter speeds. Other features include an integral motor drive with continuous speeds up to 1.5 fps, auto film
+loading and rewind, and DX film coding with no override.
+
+Either autofocus or manual focus lenses can be used. With the latter, only aperture-priority AE is possible.

@@ -1,0 +1,8 @@
+EOS 630
+
+The EOS 630 replaced die 620, although it lacks a couple of features its predecessor has, most notably the top shutter speed and flash sync. Bodi speeds got bumped down a notch with the 630 to 1/2000 and 1/125, respectively.
+The 630 makes up for this with a host of improvements. For starters, Canon claimed the 630 focuses twice as fast as previous models (the 620 and 650). It still has two AF modes, one-shot (focus-priority) and continuous (servo), but the latter was improved with an added “Focus Prediction” feature for
+sharper results when shooting highspeed action photos. To complement this faster autofocus capability, the motor drive’s speed was boosted to 5 fps (slower when tracking moving subjects in the continuous AF mode).
+
+The 630 combines the best exposure modes of the 650 and 620, plus a
+lot more. In addition to program with shift, aperture and shutter-priority AE, and metered manual modes, are both depth-of-field AE and auto-bracketing. It also has Canon’s “Programmed Image Control” (PIC) system, a set of seven preset program modes, and “Custom Function Control,” a set of seven user-set custom functions for film advance, DX coding, AF control, AE control and metering patterns. Other features include multi-exposure capability and a depth-of-field check button. TTL Flash AE options are the same for the 630 as with the 620.

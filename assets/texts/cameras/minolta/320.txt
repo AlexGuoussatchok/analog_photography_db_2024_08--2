@@ -1,0 +1,9 @@
+Maxxum 3xi &. SPxi
+
+The Maxxum 3xi and SPxi are almost identieal cameras, except for the differences shown below.
+
+The autofocus system uses a single, wide CCD (charge-coupled device) sensor, activated by the Eye Start feature (see the 7xi section for a description of Eye Start). Depending on subject movement, the system will select either singleshot (focus-priority) or Predictive Focus Control, and will switch automatically between the two modes should the subject move or stop.
+
+An 8-segment honeycomb metering pattern (seven central segments plus the background) determines correct exposure and is the only metering mode in the 3xi. The SPxi has this, plus it also uses the center segment for a spot meter. Exposure modes available include Expert Intelligence program, aperture and shutter-priority AE, metered manual, and TTL flash using either the built-in flash on the 3xi (GN 39 @ ISO 100) or dedicated accessory units. The SPxi has no built-in flash. Shutter speeds range from 30 seconds to 1/2000 second, plus B, with x-sync at 1/90. Another feature supported by the 3xi and SPxi is Auto Stand-by Zoom (ASZ) (see the 7xi section for a description of ASZ).
+
+Other features include DX coding with no override, a built-in winder that provides single-frame advance, auto film loading and rewind, and mid-roll rewind.

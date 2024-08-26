@@ -1,0 +1,6 @@
+EOS 750 & 850
+
+Both cameras have a single autofocus mode, one-shot (focus priority) operation. The 750 has a built-in flash and a hot shoe, the 850 has a hot shoe only. The E-160E flash was designed for use with the 850, but other EOS units will work as well.
+
+Exposure modes are program and depth-of-field AE using the six-zone evaluative metering pattern, ala the 650. Shutter speeds range from 2 seconds to 1/2000. Film ISO is set automatically by DX film coding. There is no manual DX override. The built-in motor provides film wind speeds to 1.5 fps. Mid-roll rewind is not possible. When film is inserted, the film is prewound to the end of the roll, then drawn back into the film cassette with each exposure, thereby protecting exposed frames if the camera back is accidentally opened. The frame counter shows the number of frames remaining on the roll.
+TTL flash and fill-flash are possible with either the built-in flash (750 only, GN of 39 at ISO 100), or add-on EZ speedlites.

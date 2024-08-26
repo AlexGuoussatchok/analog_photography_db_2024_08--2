@@ -1,0 +1,3 @@
+Rolleiflex SL66E
+
+The SL66E is an SL66 with a few nice improvements. It has a TTL meter using a centerweighted pattern. The meter readout in the viewfinder is provided by a 5 LED array. Exposure compensation (±1.5 EV) is also available. The SL66E provides TTL auto flash exposure and metering with SCA 356-compatible units. Film emulsion speeds are set on the backs with the SL66E. This information is communicated to the camera’s meter via three electrical contacts on the E-type back.

@@ -1,0 +1,43 @@
+
+Main body
+The die-cast body of the Tanack V3 seems to be the same as on the Tanack IV-S, presumably to spare the cost of making new dies for the camera. The company perhaps feared that this would be criticized, and said that the body indeed looked similar but was actually completely redesigned, with reinforcements on various places, and built with better precision.
+
+
+Viewfinder
+The top cover is all new, and its design was somewhat inspired by that of the Canon L1. It contains a viewfinder and rangefinder combined in a single round eyepiece, offset to the left as seen by the photographer. The viewfinder has 1.0× magnification and contains a bright frame for 50mm focal length only, with fixed parallax indications for 3.5ft distance — the automatic parallax correction of the Tanack SD was abandoned for cost reasons. The rangefinder has 50mm effective base and a round second-image window.
+
+Film advance and loading
+Exposure calculator, from Shashin Kōgyō March 1959. 
+The film is advanced by a lever at the top right, in a single 160-degree movement or by small increments. It is rewound by a folding crank at the opposite end. The advance lever contains an exposure counter, visible through a crescent-shaped window and manually reset by turning a small thumbwheel in the middle. The sprocket shaft is disengaged for rewind by turning a collar around the release button, with A and R indications.
+
+The back is hinged to the right; it is similar to that of the Tanack IV-S but has a round film reminder in the middle, combined with an exposure calculator for flash bulbs. The locking latch of the IV-S was replaced by a round folding key under the camera, with O and C indications. This new configuration allows to take refillable film cassettes. The word Japan is inscribed in small characters under the camera, next to the locking key, and the tripod thread is on the opposite side.
+
+
+Film loading and exposure calculator, from Shashin Kōgyō March 1959. 
+Shutter and synchronization
+The focal plane shutter has special curtains made of a fibreglass-based material; these were described by the company as equalling the metal curtains of Canon cameras, and developing almost no pinholes when directly hit by the sun light, and a utility model was registered for them. The mechanism is operated by two separate dials, and is certainly similar to that of the Tanack IV-S. The top dial is black and normally has B, 25–1 (in red), 50, 75, 100, 200, 500 positions, though very late examples have a different range of speeds (see below). An additional X indication is provided in green, pointing to the same position as 25–1. The front dial is black and chrome, and normally has the positions T, 1, 2, 4, 8, 25 (in red). The company explained that 1/15 and 1/1000 speeds were dispensed with for cost reasons — as was already the case for the Tanack IV-S.
+
+The camera has a PC flash socket at the left end of the top cover. There is a sliding button switching from F to X, placed next to the socket at the rear left of the camera. The accessory shoe is at its usual location between the viewfinder and speed dial. There are strap lugs on both sides of the body.
+
+Lens mount
+
+The lens mount is a three-lug bayonet, inspired by the Leica M3 but specific to the Tanack V3. The lens release button is on the side of the mount, as on the Leica M. No lens was ever introduced for that bayonet mount, and all the Tanack V3 were sold with Tanar lenses in Leica screw mount, mounted via an adapter ring smoothly preserving rangefinder coupling, for which a utility model was registered. The Tanar 5cm f/1.9 and f/2.8 introduced for the camera have an Exposure Value scale engraved on the tip, along the aperture ring. It corresponds to a speed scale inscribed in green at the bottom of the ring, and indicates the proper shutter setting for the required exposure value.
+
+The company was well aware that introduction of a proprietary lens mount would lead to commercial failure, and it seems that the bayonet was only introduced to make lens change easier and quicker — maybe specific lenses would have been manufactured later if the camera had met notable success. The adapter was also available separately, so that the owner could use the bayonet to attach other screw-mount lenses to the camera. Today, it is probably unwise to buy a Tanack V3 lacking the adapter, which is almost impossible to find alone.
+
+Markings
+
+The name Tanack and model name TYPE–V3 are engraved above the viewfinder, together with a red film plane indicator. The serial number is engraved in front of the accessory shoe: N°xxxxxx. The company name Tanaka Optical Co., Ltd. is engraved at the rear of the top cover.
+Commercial life
+The Tanack V3 was announced and advertised in Japanese magazines from January 1959.[10] The January advertisement in Camera Mainichi lists the camera for ¥36,000 with a Tanar 5 cm f/1.9. (This was ¥2,500 less than the Tanack IV-S with f/2 lens, an indication that rangefinder cameras were becoming harder to sell.) Other standard lenses available for the camera were the Tanar 5cm f/2.8 and f/1.5.
+
+The March 1959 issue of Shashin Kōgyō contains a detailed article on the camera by Saitō Tomosaburō of the Tanaka company, perhaps the main designer. According to this article, the name "V3" was supposedly reminding the "3 Very good" points of the new model: its precise and advanced mechanism, its excellent feeling, and its low price.[8]
+
+The July 1959 issue of the same magazine lists the Tanack V3 with the three lens options: with Tanar f/1.5 at ¥39,000, with Tanar f/1.9 at ¥36,000 or with Tanar f/2.8 at ¥29,000. The pictured camera is probably the same as in March; its serial number is barely legible but might be in the 1022xx range.
+
+The last advertisement for the camera was published in September 1959 in Camera Mainichi.[13] The camera was probably available for a few more months, until Tanaka's failure in December of the same year.
+
+Variations and total production
+Serial numbers for the Tanack V3 are confirmed in the 102xxx and 103xxx range, from 102042 to 103798,[14] in addition to body no.1022xx used in the press pictures. The total production can be estimated at about 1,500 units.
+
+Almost all the examples have the range of speeds described above, up to body no.103736.[15] The last known camera, with no.103798, has a newer range going to 1/1000. Its main dial has the following positions: B, 30–1 (in red) and X (in green), 60, 125, 250, 500, 1000. Its front dial has T, 1, 2, 4, 8 and presumably 30 (in red). The fitting of 1/1000 was perhaps experimental only, and we may wonder if the older shutter design inherited from the Tanack IV-S could reliably sustain that speed.

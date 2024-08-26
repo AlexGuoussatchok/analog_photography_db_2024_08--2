@@ -1,0 +1,60 @@
+The Mercury II (model CX) was produced from 1945 and was an upgraded version of the 1938 Mercury I (model CC). The Universal Camera Corp. suspended their normal camera-making operations during World War II in order to manufacture binoculars for the armed forces. After the war, they had decided to revamp the popular Mercury in order to allow it to accept standard 35mm film as opposed to the special Univex #200 film required for the Mercury I. A rewind button, rewind knob, and a permanent take-up spool were added as necessities for the standard 35mm film. Other improvements of the II over the I were:- a redesigned film counter dial and enlarged shutter wind and shutter speed knobs. However on the negative side, a synthetic covering was used instead of the leather on the Mercury I. The aluminum/magnesium alloy of the Mercury II did not retain its luster like the aluminum alloy of the Mercury I.
+
+Mercury II Exposure calculator
+Exposure Calculator
+The Mercury was unlike anything Universal had offered before having the unique rotary shutter. This large rotary film plane shutter is responsible for the circular protrusion on top of the camera. Universal's Chief Engineer, George Kende, had previously designed and engineered a compact 8mm movie camera called the UniveX Cine 8. He used his knowledge of shutters used in movie cameras to design a unique rotary shutter for still cameras that would be extremely accurate, and capable of very high speeds. Basically, two slotted discs move with respect to each other to produce a varying width slit which travels at constant speed across the film plane. It is capable of extremely accurate speeds up to 1/1000th of a second. Not content with producing America's fastest candid camera of the time, in June of 1939, Universal introduced the Mercury Model CC-1500, named after its top shutter speed of 1/1500s.
+
+The Mercury was the first camera to have internal flash synchronization, known today as the hot shoe. This camera is a viewfinder camera with Galilean type optical finder. It is designed for half frame 35mm to give 65 half size (18x24mm) exposures. It has a variety of lenses available including:- Tricor f/2.7 35mm (coated); Tricor f/3.5 35mm (non coated); Hexar f/2.0. The body is equipped with a depth of field table and a rather comprehensive exposure calculator. It also has a disc to use as a reminder for the film you are using.
+
+========================================
+
+Left foreground: a prewar Mercury with 35mm f/2 lens and rapid-wind attachment; behind and to the right, an early example with f/3.5 lens and accessory extinction light meter. The 1945 Mercury II, in the rear, was more successful due to its acceptance of standard Kodak film cartridges; it was also larger, and not quite as nicely proportioned and finished. The Mercury was one of only three prewar American cameras offered with an f/2 lens; the others were the Kodak Bantam Special and the Kodak Ektra, both expensive luxury items when new and prized collectibles today.
+Thinking Out of the Box
+The Universal Camera Corporation didn't get much respect from the established photo industry. Everything they did was unorthodox: the company was run by a banker and an insurance man with no history in photography, and its market strategy was built around a philosophy of designing cameras to require a unique, 'captive' film load obtainable only from Univex. Their cameras had always been low priced, benefiting from the profit obtained in downstream film sales, but they had always offered good quality for the price. In fact, they were still a good deal even including the film costs; but since creating a wave of popularity for small format cameras with the 39 cent Model A and the $1 AF series in the early and mid 1930s, Univex had become identified with "cheap" cameras. They wanted to participate in the rapidly growing 35mm trend, and to do that they needed to elevate their image. The vehicle for Universal's foray into 35mm was the Mercury.
+
+
+
+In designing the Mercury, Univex benefited from their lack of experience in 35mm camera design: it freed them to innovate, to adapt ideas from other areas and apply them to the problem of a compact, accurate and (above all) easy-to-manufacture precision camera. They also benefited greatly from the gifts of their Chief Engineer, George Kende, a man of uncommon creativity and skill.
+
+
+
+The center of the Mercury's design is its unique rotary shutter. A concept borrowed from conventional practice in 8mm movie cameras and projectors, a field into which Univex had entered with great success in 1936, the shutter consisted of a 2-piece disk with its center just above the top edge of the film. The two halves could be adjusted relative to each other to vary the width of the pie-slice-shaped slit which passed in front of the film to make the exposure, providing a range of speeds from 1/20 to 1/1000 of a second. The design was simplicity itself, highly modular for easy assembly, with only a single spindle (compared to as many as four in conventional focal plane shutters of the time). Like the famous Zeiss Contax, the Mercury shutter was incapable of 'fading', the fault caused by speed differences between the two curtains, because its opening and closing blades were rigidly geared together and driven by a single spring. The location of the slit was planned so that, at high speeds, the disk travelled through half of its rotation before the exposure began, stabilizing the speed for the most uniform exposure possible. Indeed, tests by the Harvard Observatory found the Mercury's shutter superior in accuracy to both the Contax and the Leica, not to mention the lesser American makes in its class.
+
+
+
+There was a down side: the disk could not fit within the dimensions of a conventional 35mm camera body, so to keep bulk to a minimum the camera was designed with an unusual looking protrusion above the top plate to house the shutter disk. Even so, the disk could only be large enough to provide coverage for a vertical 'half frame' negative, 18 x 24mm, rather than the conventional 24 x 36mm horizontal frame. The Mercury was not the first half frame still camera, nor was it the last; but it was the only one on the market at its time.
+
+
+
+The body built around this unusual shutter was sleek in appearance, despite its unusual 'forehead': with rounded ends like a Leica and a smooth, recessed shutter release button on top, it presented a much more professional appearance than the offerings from Argus and Kodak. The shutter design mandated placing its operating controls on the front, parallel to the axis of rotation. Univex turned this limitation into an advantage by grouping the winding knob, shutter dial and lens into a closely coupled "control center" and promoting the benefits of having all controls in one place.
+
+
+
+Having no experience in precision camera manufacture, and being staffed largely with unskilled assemblers, Univex depended heavily on modular design and simplicity of construction. Thus the Mercury lacked such features as coupled rangefinder, extended slow shutter speeds and built-in light meters becoming popular on other models. Once again, however, Univex turned a handicap into an advantage by building not one but two accessory shoes into the top of the camera and offering a range of clip-on accessories including both a light meter and a rangefinder... with the added feature that the accessories themselves carried shoes on top to permit stacking of multiple features. Following this philosophy further, the front-mounted wind knob allowed Univex to offer an accessory rapid-wind lever that could be operated like a trigger with the right middle finger while the index finger released the shutter at a rate of one frame per second or faster.
+
+
+
+The second accessory shoe contained another innovative feature that became universal about thirty years later. Flash synchronization was still a novelty only six years after the invention of the flash bulb, with only the Kine Exakta offering it in a 35mm focal plane shutter, but Univex carried the concept one step further: the Univex flash gun was designed with an electrical contact built into its mounting foot, and the mating contact was built into the center of the accessory shoe for what later became known as a "hot shoe" wireless connection. Copied soon after by Perfex, later by the Argus C4 series and the Stereo Realist, and ultimately by the entire photographic industry, we have Univex to thank for putting the synch connection in what at the time was not even thought of as a place to put a flash gun.
+
+
+
+Capitalizing on its newfound 'high end' status, Univex introduced a second variant of the Mercury, with the shutter spring overwound to provide a top speed of 1/1500 second, topping even the Contax II. To go with it, a six-element f/2.0 lens was provided. Both of these are quite rare today.
+
+
+
+The Mercury's Achilles Heel turned out to be the company's founding philosophy. Like all Univex products, it was designed specifically to require a special film load, available only from the manufacturer. This worked well with the half frame format, since Univex could offer special short rolls to provide the then-standard 18 and 36 exposure 35mm loads, where a conventional Kodak cartridge could have run to 72 exposures. However, not being a film manufacturer, Universal had contracted with Gevaert in Belgium to provide the special film for all of its cameras. It was not long after the Mercury's late-1938 introduction that the disadvantage of having the sole film supply based in Belgium became dramatically apparent. The company scrambled to make other arrangements, including marketing reloadable cartridges that could be loaded from standard 35mm films, but existing users were getting nervous and potential new customers were looking elsewhere.
+
+
+
+Government contracts kept Universal alive long enough to introduce, immediately after the war, a revised model of the Mercury. The Mercury II was identical to the original model except for modifications to make it accept the standard Kodak cartridge rather than the special Univex film load (although the takeup spool could be removed, after which the Univex film spool fit in its place). In the bargain, the camera gained a surprising 1/2 inch in both length and height, a difference which is not immediately apparent unless the two are seen side by side, and it would not accept the Mercury's rapid wind attachment. It sold very well, though, taking advantage of the Mercury's good reputation (with the buying public, if not with the industry) and the postwar buying rush.
+
+
+
+Although Universal never followed up successfully on the Mercury and Mercury II, some of their innovations survived or reappeared from time to time. In addition to the hot shoe, the half frame format enjoyed a resurgence in the early 1960s, promoted heavily by Olympus. The Olympus Pen F of 1964 resurrected the Mercury's rotary shutter, although the mechanism and materials they used were quite different.
+
+
+
+If you would like to learn more about the Mercury and about Univex (their most interesting innovative products never made it to market), Cynthia Repinski's exceptionally well-researched book, The Univex Story, is available at better bookstores, and often on eBay.
+
+===============================================
+

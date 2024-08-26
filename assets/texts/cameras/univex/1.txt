@@ -1,0 +1,87 @@
+Before I continue the Mercury saga, I’d like to give credit to the source of much of the factual information contained in the past few posts.  The UniveX Story, by Cynthia Repinski, is the absolute last word on the origins and history of the Universal Camera Company.  If you collect UniveX cameras, or if you’re simply interested in the history of amateur photography in the first half of the 20th century, you owe it to yourself to read this book.    Cynthia spent a great deal of time and effort interviewing some of the last surviving employees of the company in order to produce her book.  Having said that, in regard to this blog, when I refer to UniveX history, generally the facts are hers but the analysis is mine.  So don’t blame Cynthia for my opinions on the engineering or marketing decisions made by the company – she may not agree with me.   I have studied many of Universal’s patents and most of their literature in order to arrive at some very strong opinions about how the company managed to squander its intellectual property, turning a potentially world-class enterprise into a failure and a laughingstock.  In any case, let’s continue the story….
+
+ 
+
+
+The Mercury Model CC (see previous post for history) boasted a shutter speed of 1/1000 second, and was recognized as the fastest candid camera in America.  But outside the U.S., there was a faster one – the Contax II, manufactured by Zeiss Ikon.  Galled by the fact that the German made camera boasted a shutter speed of 1/1250 second, Universal Camera Corporation management decided to up the ante.  They charged the engineering department to build a faster version of the Mercury’s rotary shutter, to outdo the Germans and thus produce the fastest camera in the world.
+
+Model CC-1500 Closeup
+Model CC-1500 control knobs. Note the 1/1500 maximum shutter speed.
+
+There is no documentation of what George Kende and his compatriots thought about this contest of one-upmanship.  Considering the course of action they were forced to take, I suspect they protested loudly, because the method chosen to increase the Mercury’s shutter speed was not sound from an engineering standpoint.  To understand why this is true, you need to understand the workings of the shutter.  It’s simply a round circular blade with a pie-shaped opening that can be varied in width.  The blade turns at a constant speed, and the opening allows light to pass through as it passes in front of the film plane.  A wide opening produces a longer exposure, and a narrower one produces a shorter exposure.  The speed of the blade, however, is constant – only the width of the opening is variable. 
+
+
+Mercury rotary shutter drawing
+
+Logically, then, the way to obtain a faster shutter speed would be to employ a narrower opening.   In fact, one of the preliminary patent drawings created for the original rotary shutter design bears a handwritten note reading “1-1/2o = 1/2000 sec”.  So , the faster setting could have been acheived by modifying the design of the original shutter and adding a narrower setting to those already in use.  But the cost of doing so would have been significant.  Design and prototyping of the original Mercury had cost in excess of $100,000, and most of that cost related to the shutter design.   Making a new shutter would also have required time, and the Universal execs wanted a solution now.
+
+So, a very simple solution was employed.  They simply increased the spring tension, which in turn, increased the blade speed.  This, of course, increased the shutter speed at all settings, not just the top one.  The new top speed of the shutter was 1/1500 second, the fastest in the world.  In addition to tinkering with the spring, of course, a new shutter speed knob had to be made and calibrated, and a new back plate for the “hump” carried the designation “Model CC-1500”.      The new “Superspeed” camera made a big splash upon its introduction in 1939.  The two 35mm Tricor normal lenses, f/3.5 and f/2.7, were available for the Superspeed, but the crowning achievement was a new Wollensak Hexar f/2.0 (mentioned in the previous post as a later option for all Mercuries) high speed lens to complement the world’s fastest shutter.  The Superspeed sold for $65.00 thus equipped – not so affordable compared to the original $25.00 Mercury Model CC.  Even so, about 3000 were sold in 1939. 
+
+But the Superspeed was destined to be built for only one year; in fact, it appears that there may have been only one production run.  Why?  The reason is probably that, by taking the “cheap and dirty” approach to producing the high-speed shutter, Universal had dramatically impaired its reliability.  The springs fatigued very easily; some broke, some lost their temper and softened.  Today, a fully functioning Superspeed is pretty rare.  Lots of them have broken springs, and lots more have slow shutters because of the overtensioning to which they were subjected.  I had the good fortune to obtain a really clean, working copy of the Superspeed a number of years ago – the shutter still works, and seems to be up to snuff.  I am, however, afraid to put it to much use, for fear of breaking the spring.  A side-by-side comparison between Models CC and CC-1500 will clearly show the faster rotation rate of the shutter blades on the Superspeed.  
+
+I could have titled this post “How Crappy Engineering Screwed Up the Most Innovative Camera Design of Its Day,” but I didn’t, because I don’t really blame the engineers for what happened to the Mercury Superspeed.  I believe that the decision to cut corners and rush the product to market as cheaply as possible typifies management decisions made throughout the unfortunate history of the Universal Camera Corporation.  
+
+Note: Sharp-eyed readers will have noted that two of the photos in my previous post on the Model CC actually depict a Model CC-1500.  It’s otherwise identical to the Model CC, and it’s in better shape, so I used it as a generic example of the Mercury I.
+
+5 Comments
+
+Posted in Camera Collecting
+
+Tagged Camera Collecting, Universal Camera Corporation, UniveX Mercury
+
+“America’s Challenge to the World’s Finest Cameras” – the UniveX Mercury Model CC
+Posted on November 9, 2009 | 6 comments
+Mercury I with Flash
+Mercury Model CC with Flash Unit
+
+In 1938, while the Universal Camera Corporation was introducing the Iris Series cameras described in the previous post, they dropped a real bombshell on the photographic world.  Unlike practically everything else they ever made, this product had real significance, and garnered respect from the rest of the industry.   The camera was called the UniveX Mercury Model CC, and it would go on to be the camera for which its maker is remembered.  
+
+Need for an American-made Candid Camera
+
+In 1937, when design work on the Mercury Model CC began, serious “candid camera” photographers, be they amateur or professional, didn’t have much to choose from in the area of American-made cameras.  The Iris Series was very low-end, although popular.  The Zenith, selling at $12-15, was a good value for the money, but it didn’t used 35mm film, so color prints and slides were out of the question.  Argus, in Chicago, had a compact Bakelite bodied candid camera that did use 35mm film, but its top shutter speed was 1/200 second.  Europe, on the other hand, had some truly well-engineered 35mm cameras, such as the Leica and the Contax.  These cameras had interchangeable lenses, focal plane shutters offering speeds to 1/1000 second and higher, and possessed build quality, fit, finish, and operational accuracy that nothing in the U.S. could touch.  They were also very expensive.  In 1939 (closest year I could get), the Leica cost $171, the Contax a whopping $285.   The average hourly worker in the United States in 1939 made 63 cents an hour and worked an average of 37.7 hours per week, for a total of $23.86.  Obviously, many people made more money than this, and quite a few made less.  But for marketing purposes, I would think that one wouldn’t want to price a luxury item like a camera at much higher than a week’s pay for a working man.  And in fact, Argus followed that very path in 1939, pricing their Argus C at $25.  So, there was the price target – Universal needed to design a serious camera to sell for $25.  And it needed features that would elevate its status to that of Leica and Contax, presenting the camera as a serious tool for serious photographers.  This was the task that Universal’s Chief Engineer, George Kende, faced when he began work on the Mercury.   
+
+George Kende’s Mercury Design
+
+Mercury I Design Drawings
+Mercury I Design Drawings - 1937
+
+Two years earlier, as his first assignment at Universal, George had designed and engineered a compact 8mm movie camera called the UniveX Cine 8.  He used his knowledge of shutters used in movie cameras to design a unique rotary shutter for still cameras that would be extremely accurate, and capable of very high speeds.  Most importantly, the simple design required a minimum number of parts, which could be assembled using unskilled labor.  He employed aluminum and zinc die-cast parts to reduce the amount of precision machining required.  He sourced out the interchangeable lenses to domestic manufacturers like Wollensak.  The camera used a scale-focusing lens mount, but an accessory rangefinder (outsourced) was available as an option.  Universal produced the clip-on extinction meter in-house.  The final detail was one that he’d been wrestling with for a while: the camera needed flash synchronization, and no one at Universal liked the idea of dangling wires connecting the camera’s shutter to the flashgun.  So, George designed a “hot shoe,” an accessory clip with an electrical contact in the center which would allow the camera’s shutter to trip the flash using the internal circuitry inside.   If you have a 35mm camera of any kind, you’ve probably seen a hot shoe – nearly every camera that accepts an electronic flash has one.  But the Mercury Model CC was the very first camera to employ one, and every other UniveX camera with flash synchronization used it, too.  That’s how the Iris and Zenith Cameras got their own Flash versions.
+
+Mercury shutter patent drawing
+Mercury shutter patent drawing - this patent also covered the "hot shoe"
+
+Of course, the Mercury was tripping flashbulbs, not an electronic flash unit, so the synchronization had to allow for the time required for the bulb to ignite, so that the maximum brightness coincided with the time that the shutter opening passed in front of the film plane.  George used a near-circular cam mounted on the shutter shaft to trip the flash contacts at just the right time.  All these details were patented by Universal, and George Kende is the primary inventor.  Philip Brownscombe was the secondary inventor.
+
+The Mercury Model CC is a Success
+
+When the Mercury hit the market late in 1938, it was an immediate success.  No 35mm in the world could provide the features and performance of the Mercury at anywhere near its initial selling price of $25.  Universal’s net sales, having slumped in early 1938, showed a gain of over 25% in 1939, and the camera continued to sell in spite of all the company’s other difficulties, right up until 1941, when Universal became engaged in the business of making binoculars for the war effort.
+
+Mercury I Closeup 2
+Note the 1/1000 sec maximum shutter speed, biggest selling feature of the Mercury
+
+The Camera
+
+The Mercury in its finished form is strange-looking for a 35mm camera.  The rotary shutter took up a lot of space, requiring a “hump” along the back plane to accommodate the large circular blades.  The two knobs in front of the camera controlled the shutter speed setting and advanced the film.  The format is known as a “half frame”, providing a vertical 18 x 24 mm frame size, half the size of a conventional 35mm negative.   The camera is small and light compared to most of the cameras in its class that were available at the time, weighing about a pound and a half, and measuring 5-1/4” x 3-3/8” x 1-3/8”.  The rounded corners make it look and feel smaller. 
+
+Mercury I Front
+The Univex Mercury Model CC
+
+Mercury I Back
+The Mercury's exposure calculator is so complicated it takes 2-1/2 pages to explain it in the instruction manual
+
+The specs are impressive:
+
+Lens: 35mm F/3.5 Wollensak Tricor (std), 35mm f/2.7 Wollensak Tricor (opt) or 35mm f/2.0 Hexar (opt).  All provide continuous stops down to f/22.
+
+Focusing: Scale focusing from 1-1/2 feet to infinity
+
+Shutter: Rotary focal plane, speeds 1/20 to 1/1000 second plus B & T
+
+Accessories: Clip-on rangefinder (uncoupled), Univex extinction meter, Mercury Photoflash Unit, Rapid Winder, 75mm Ilex Telecor lens, 125mm Wollensak telephoto lens, 35mm daylight film loader with Univex reloadable cartridges for Mercury and Corsair I cameras, Univex Micrographic Enlarger, Univex Copy Stand.
+
+Micrographic Enlarger
+A decrepit example of the Micrographic Enlarger
+
+With a maximum shutter speed of 1/1000 second, the Mercury was the fastest candid camera in the United States.  But the Contax shutter, at 1/1250 second, was still faster.  Universal would now challenge Contax in their quest to offer the best-performing candid camera at an affordable price.  Next up:  The Mercury CC-1500 Superspeed.
+
+Strange footnotes:  Scrounging around the flea markets can be tedious, and there’s no substitute for the excitement of recognizing a rare item marked with a low price.  A while back, I was browsing the aisles when I spotted a Univex Hexar f/2.0 box marked $1.00.  When I picked up the box, I could tell by the weight that there was a lens inside. I threw the money at the seller, all the while trying to remain nonchalant.  I took the box without examining its contents – I couldn’t bring myself to look inside.  Of course, when I did venture to look inside the blue plush-lined box, I found, not the Hexar (value: about a hundred bucks), but the entry-level f/3.5 Tricor (value: maybe ten bucks).  The instruction sheet was for an f/2.7 Tricor, another normal lens that was available for the Mercury.  Even so, any pristine UniveX product is a bargain at a dollar!

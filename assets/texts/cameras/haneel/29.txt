@@ -1,0 +1,32 @@
+R5 - MORE AUTOMATION AND MANY DETAIL
+
+IMPROVEMENTS
+
+After six years in production there was a need to update the R4. In addition to the major changes of variable programme mode and TTL flash metering, Leica incorporated many detail improvements which experience in the field had suggested would be welcomed by photographers.
+
+IMPROVED VIEWFINDER
+
+The most obvious gain is the increased viewfinder brightness. The new type of focussing screens (which can be fitted to the R4 too) are claimed to be one stop brighter than (ie twice as bright as) the old ones. If anything, this claim seems understated. The plain screen in particular is a vast improvement and I now use the grid version as a standard screen. Not only are the screens brighter but the quality of the image, particularly away from the centre, is much improved. Further, for the first time on a Leica since the Illg of 1957, dioptre correction of the finder eyepiece has been incorporated.
+
+Failure to correct for eyesight defects which prevent proper vision of the focussing screen is a major cause of inaccurate focussing and consequent loss of quality. The -2 to +2 correction built in will be a valuable aid to many. This is not a great advantage for sufferers from astigmatism, but what does help them considerably is the additional eyepiece relief that now permits viewing the whole screen when wearing spectacles. However, this has only been achieved with some reduction in viewfinder magnification.
+
+There are changes in the presentation of information in the viewfinder - much neater generally, but of particular value is theelimination of the incursion of the shutter speed/f stop diodes panel into the image area. This certainly helps precise composition. Another useful practical improvement is that the viewfinder display stays illuminated for about lOsec after touching the shutter release. On the R4 removing the first slight pressure switches off the display immediately.
+
+Still on the display, one further idiosyncrasy of the R4 is that when you use the very convenient memory lock (a slight extra pressure on the shutter release) to hold a spot reading, the actual read-out in the finder continues to fluctuate. This can be confusing at times and the R5 now displays the locked reading.
+
+Every single one of the above improvements is worthwhile but the much brighter finder and the ability to see the whole of it when wearing spectacles are the features of greatest value in practical picture-taking. I particularly appreciate the remarkably bright plain screen for long lens and close-up work.
+
+HIGHER SHUTTER SPEED
+
+Leica’s first SLR, the Leicaflex 1 of 1965, introduced a l/2000sec top shutter speed in advance of any other major camera manufacturer. This was retained on the later SL and SL2. All the more surprising was that the R3 and even the later R4 only offered l/1000sec when 1/2000 had become common and 1/4000 was not unusual.
+
+Whilst I believe that the real value of the l/4000sec shutters lies in their higher X synch speed of l/250sec, I have on many occasions been frustrated by the lack of any ‘headroom’ above l/1000sec on the R4. Because the mode gives spot metering I prefer to use my R4 in aperture priority. With long lenses and/or action subjects normal practice is to select a stop that gives a shutter speed of between 1/500 and l/1000sec. Unfortunately a slight increase in lighting levels can take the shutter speed over l/1000sec and exposure is then unreliable.
+
+For this reason a reliable l/2000sec top speed was long overdue on an automatic Leica ‘R’, so it is very pleasing to be able to have this on the R5. If there is a disappointment it is that the maximum flash synch speed is still l/100sec - too slow really for convenient work with fill-in flash, especially when we now have TTL flash metering which makes all types of flash photography - including fill-in techniques - so much easier and more flexible.
+
+TTL FLASH
+
+The R5 is used with SCA 300 system flashguns. The SCA 351 adapter gives a full TTL metering facility and there are excellent units available from Bauer, Metz and others.
+
+There is no doubt that TTL eases a lot of the difficulties when using flash. You don’t have to remember to set a particular film speed on the gun and then set a particular stop on the camera. Any compensation needed at higher image ratios in close-up photography is automatically taken care of, and in the case of fill-in flash the operation and calculation can be simplified. You have a full range of stops to work with, which can be especially valuable with bounce flash, and of course the display in the finder tells you when the gun is fully charged and whether sufficient power was available to ensure a correct exposure.
+

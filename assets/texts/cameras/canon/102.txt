@@ -1,0 +1,5 @@
+EOS RT
+
+RT (Real Time) is the feature that separates the RT from all other EOS cameras (and most others, regardless of make), except the EOS-In RS. The RT contains a fixed, pellicle mirror, the same arrangement used originally with the Canon Pellix and later with the high-speed F-l cameras, and most recently with the EOS-In RS, in which about 30% of the light entering the camera is reflected upward by the semi-transparent mirror and then through the viewfinder, while the remaining light travels directly to the film plane. The primary advantage to this arrangement is that the photographer can “capture the moment” much more decisively with a RT than with conventional SLRs, which, by their very nature, do not allow the photographer to see the subject at the moment of exposure. Other advantages are reductions in shooting-time lag, vibration and noise. Light fall-off due to the fixed mirror is minimal.
+
+The EOS RT has all the features of the 630 except “Programmed Image Control”. It also has Canon’s “Custom Function Control” feature, which provides eight additional user-set custom functions.

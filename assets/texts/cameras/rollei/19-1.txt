@@ -1,0 +1,11 @@
+Rolleiflex 6001
+
+The Rolleiflex 6001 replaces the 6003 as the system’s entry level camera. As such, however, it would not be fair at all to label it a “stripped down” camera.
+
+The camera has no onboard ambient exposure meter, but does have a built-in TTL OTF flash meter that is compatible with SCA300 flash units. The integral motor provides single frame advance and film transport up to 1.5 frames per second in continuous advance mode. Exposure bracketing, flash bracketing, and multiple exposure modes are also available.
+
+Shutter speeds depend upon the lenses mounted, but range from 30 seconds up to 1/1000 second (with the PQS lenses), plus B, with flash sync at all speeds. Speeds are selectable in 1/3-stop increments.
+
+Other features include a PC terminal in addition to the dedicated hot shoe, mirror lock up, an electronic remote release, depth of field preview, a self-timer, and more.
+
+The 6001 is digital back ready, but cannot use the 6008i’s Master Control Unit.
