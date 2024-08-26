@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; // Import this for rootBundle
 import 'package:analog_photography_db/database_helpers/cameras_catalogue_database_helper.dart';
-import 'package:flutter/services.dart';
 
 class CatalogueCamerasScreen extends StatefulWidget {
   const CatalogueCamerasScreen({super.key});
@@ -11,40 +11,50 @@ class CatalogueCamerasScreen extends StatefulWidget {
 
 class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
   List<String> cameraBrands = [];
+  List<String> filteredBrands = [];
   List<String> cameraModels = [];
   String? selectedBrand;
+  TextEditingController brandController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
     _loadCameraBrands();
+    brandController.addListener(_filterBrands);
   }
 
-  Future<String> _readCameraDescription(String path) async {
-    try {
-      return await rootBundle.loadString(path);
-    } catch (e) {
-      print("Error reading text file: $e");
-      return "Description not available.";
-    }
+  @override
+  void dispose() {
+    brandController.removeListener(_filterBrands);
+    brandController.dispose();
+    super.dispose();
   }
 
-  _loadCameraBrands() async {
+  Future<void> _loadCameraBrands() async {
     try {
       var brands = await CamerasCatalogueDatabaseHelper().getCameraBrands();
       setState(() {
         cameraBrands = brands.map((e) => e['brand'].toString()).toList();
+        filteredBrands = cameraBrands;
       });
     } catch (e) {
       print(e);
     }
   }
 
+  void _filterBrands() {
+    setState(() {
+      filteredBrands = cameraBrands
+          .where((brand) =>
+          brand.toLowerCase().contains(brandController.text.toLowerCase()))
+          .toList();
+    });
+  }
+
   _loadCameraModels(String brand) async {
     try {
       String tableName = '${brand.toLowerCase()}_cameras_catalogue';
-      var models = await CamerasCatalogueDatabaseHelper().getCameraModels(
-          tableName);
+      var models = await CamerasCatalogueDatabaseHelper().getCameraModels(tableName);
       setState(() {
         cameraModels = models.map((e) => e['model'].toString()).toList();
       });
@@ -127,6 +137,15 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     });
   }
 
+  Future<String> _readCameraDescription(String path) async {
+    try {
+      return await rootBundle.loadString(path);
+    } catch (e) {
+      print("Error reading text file: $e");
+      return "Description not available.";
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -138,53 +157,53 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8.0),
-                border: Border.all(
-                  color: Colors.grey,
-                  width: 2.0,
-                ),
-              ),
-              padding: const EdgeInsets.symmetric(horizontal: 10.0),
-              child: DropdownButtonHideUnderline(
-                child: DropdownButton<String>(
-                  isExpanded: true,
-                  items: cameraBrands.map((String brand) {
-                    return DropdownMenuItem<String>(
-                      value: brand,
-                      child: Text(brand),
-                    );
-                  }).toList(),
-                  onChanged: (value) {
-                    setState(() {
-                      selectedBrand = value!;
-                      _loadCameraModels(selectedBrand!);
-                    });
-                  },
-                  hint: const Text('Select a brand'),
-                  value: selectedBrand,
+            TextField(
+              controller: brandController,
+              decoration: InputDecoration(
+                labelText: 'Search or Select a Brand',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
               ),
             ),
-            const SizedBox(height: 16.0),
-            Expanded(
-              child: ListView.builder(
-                itemCount: cameraModels.length,
-                itemBuilder: (context, index) {
-                  return ListTile(
-                    title: Text(cameraModels[index]),
-                    onTap: () async {
-                      String tableName = '${selectedBrand!.toLowerCase()}_cameras_catalogue';
-                      Map<String, dynamic> details = await CamerasCatalogueDatabaseHelper().getCameraDetails(tableName, cameraModels[index]);
-
-                      _showCameraDetails(context, details);
-                    },
-                  );
-                },
+            const SizedBox(height: 10.0),
+            if (filteredBrands.isNotEmpty)
+              Flexible(
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: filteredBrands.length,
+                  itemBuilder: (context, index) {
+                    return ListTile(
+                      title: Text(filteredBrands[index]),
+                      onTap: () {
+                        setState(() {
+                          selectedBrand = filteredBrands[index];
+                          brandController.text = selectedBrand!;
+                          _loadCameraModels(selectedBrand!);
+                          filteredBrands = [];
+                        });
+                      },
+                    );
+                  },
+                ),
               ),
-            )
+            if (filteredBrands.isEmpty && selectedBrand != null)
+              Flexible(
+                child: ListView.builder(
+                  itemCount: cameraModels.length,
+                  itemBuilder: (context, index) {
+                    return ListTile(
+                      title: Text(cameraModels[index]),
+                      onTap: () async {
+                        String tableName = '${selectedBrand!.toLowerCase()}_cameras_catalogue';
+                        Map<String, dynamic> details = await CamerasCatalogueDatabaseHelper().getCameraDetails(tableName, cameraModels[index]);
 
+                        _showCameraDetails(context, details);
+                      },
+                    );
+                  },
+                ),
+              ),
           ],
         ),
       ),
