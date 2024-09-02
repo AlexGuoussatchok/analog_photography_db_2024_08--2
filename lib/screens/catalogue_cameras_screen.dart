@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; // Import this for rootBundle
+import 'dart:convert';
 import 'package:analog_photography_db/database_helpers/cameras_catalogue_database_helper.dart';
 
 class CatalogueCamerasScreen extends StatefulWidget {
@@ -63,78 +64,79 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     }
   }
 
-  void _showCameraDetails(BuildContext context, Map<String, dynamic> details) {
+  void _showCameraDetails(BuildContext context, Map<String, dynamic> details) async {
     List<String> excludedColumns = ['id', 'model'];
-
     String brand = selectedBrand!.toLowerCase();
-    String imageId = details['id'].toString();
-    String imagePath = 'assets/images/cameras/$brand/$imageId.jpg';
-    String textPath = 'assets/texts/cameras/$brand/$imageId.txt';
+    String modelId = details['id'].toString();
+    String imageFolderPath = 'assets/cameras_catalogue/$brand/$modelId/images/';
 
-    List<Widget> detailWidgets = details.entries.where((entry) =>
-    // Exclude entries that are null or in the excludedColumns list
-    entry.value != null &&
-        entry.value.toString().isNotEmpty &&
-        !excludedColumns.contains(entry.key)
-    ).toList().asMap().entries.map((mapEntry) {
-      int index = mapEntry.key;
-      MapEntry<String, dynamic> entry = mapEntry.value;
+    // Dynamically load all images in the folder
+    List<String> imagePaths = await _loadImagesFromFolder(imageFolderPath);
+
+    List<Widget> thumbnailWidgets = imagePaths.map((path) {
+      return GestureDetector(
+        onTap: () => _showEnlargedImage(context, imagePaths, path),
+        child: Image.asset(path, width: 80, height: 80), // Thumbnail size
+      );
+    }).toList();
+
+    List<Widget> detailWidgets = details.entries
+        .where((entry) => entry.value != null && entry.value.toString().isNotEmpty && !excludedColumns.contains(entry.key))
+        .map((entry) {
       return Container(
         width: double.infinity,
         margin: const EdgeInsets.only(bottom: 8.0),
         padding: const EdgeInsets.all(8.0),
         decoration: BoxDecoration(
           border: Border.all(color: Colors.grey.shade400),
-          color: index.isEven ? Colors.grey.shade100 : Colors.white,
+          color: Colors.white,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
-              entry.key.replaceAll('_', ' '),
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ), // The column name
+            Text(entry.key.replaceAll('_', ' '), style: const TextStyle(fontWeight: FontWeight.bold)),
             const SizedBox(height: 4.0),
-            Text(entry.value.toString()), // The value for that column
+            Text(entry.value.toString()),
           ],
         ),
       );
     }).toList();
 
-    // Combined list of widgets with image and details
-    List<Widget> combinedWidgets = [
-      Image.asset(imagePath),
-      Text(details['model']?.replaceAll('_', ' ') ?? "Unknown Model"),
-      const SizedBox(height: 10.0),
-      ...detailWidgets
-    ];
 
-    _readCameraDescription(textPath).then((cameraDescription) {
-      // Add the description text to combinedWidgets
-      combinedWidgets.add(Text(cameraDescription));
+    String textPath = 'assets/texts/cameras/$brand/$modelId.txt';
+    String cameraDescription = await _readCameraDescription(textPath);
 
-      showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          return AlertDialog(
-            content: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: combinedWidgets,
-              ),
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          content: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Wrap(
+                  spacing: 8.0,
+                  runSpacing: 8.0,
+                  children: thumbnailWidgets,
+                ),
+                const SizedBox(height: 10.0),
+                ...detailWidgets,
+                const SizedBox(height: 10.0),
+                Text(cameraDescription),
+              ],
             ),
-            actions: <Widget>[
-              TextButton(
-                child: const Text('Close'),
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-              ),
-            ],
-          );
-        },
-      );
-    });
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: const Text('Close'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
   }
 
   Future<String> _readCameraDescription(String path) async {
@@ -145,6 +147,42 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
       return "Description not available.";
     }
   }
+
+  Future<List<String>> _loadImagesFromFolder(String folderPath) async {
+    final manifestContent = await rootBundle.loadString('AssetManifest.json');
+    final Map<String, dynamic> manifestMap = json.decode(manifestContent);
+
+    // Filter for files that are in the desired folder path
+    final imagePaths = manifestMap.keys
+        .where((String key) => key.startsWith(folderPath))
+        .toList();
+
+    return imagePaths;
+  }
+
+  void _showEnlargedImage(BuildContext context, List<String> imagePaths, String selectedImage) {
+    int initialIndex = imagePaths.indexOf(selectedImage);
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Dialog(
+          child: StatefulBuilder(
+            builder: (BuildContext context, StateSetter setState) {
+              return PageView.builder(
+                itemCount: imagePaths.length,
+                controller: PageController(initialPage: initialIndex),
+                itemBuilder: (context, index) {
+                  return Image.asset(imagePaths[index]);
+                },
+              );
+            },
+          ),
+        );
+      },
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {

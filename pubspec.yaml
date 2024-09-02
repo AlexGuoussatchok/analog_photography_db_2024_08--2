@@ -43,34 +43,9 @@ flutter:
     - assets/databases/processors_catalogue.db
 
 
-    - assets/images/cameras/agfa/
-    - assets/images/cameras/canon/
-    - assets/images/cameras/fuji/
-    - assets/images/cameras/konica/
-    - assets/images/cameras/kyocera/
-    - assets/images/cameras/lomo/
-    - assets/images/cameras/minolta/
-    - assets/images/cameras/minox/
-    - assets/images/cameras/nikon/
-    - assets/images/cameras/olympus/
-    - assets/images/cameras/pentax/
-    - assets/images/cameras/ricoh/
-    - assets/images/cameras/samsung/
-    - assets/images/cameras/spartus/
-    - assets/images/cameras/sunagor/
-    - assets/images/cameras/tanack/
-    - assets/images/cameras/topcon/
-    - assets/images/cameras/topshot/
-    - assets/images/cameras/vivitar/
-    - assets/images/cameras/voigtlander/
-    - assets/images/cameras/wzfo/
-    - assets/images/cameras/yashica/
-    - assets/images/cameras/zeis_ikon/
-    - assets/images/cameras/zenit/
+    - assets/cameras_catalogue/canon/215/images/
 
     - assets/images/developers/
-
-
 
     - assets/images/dryers/ilford/
 
