@@ -1,6 +1,6 @@
+import 'dart:convert';  // Import this for JSON decoding
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; // Import this for rootBundle
-import 'dart:convert';
 import 'package:analog_photography_db/database_helpers/cameras_catalogue_database_helper.dart';
 
 class CatalogueCamerasScreen extends StatefulWidget {
@@ -55,7 +55,8 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
   _loadCameraModels(String brand) async {
     try {
       String tableName = '${brand.toLowerCase()}_cameras_catalogue';
-      var models = await CamerasCatalogueDatabaseHelper().getCameraModels(tableName);
+      var models =
+      await CamerasCatalogueDatabaseHelper().getCameraModels(tableName);
       setState(() {
         cameraModels = models.map((e) => e['model'].toString()).toList();
       });
@@ -69,9 +70,12 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     String brand = selectedBrand!.toLowerCase();
     String modelId = details['id'].toString();
     String imageFolderPath = 'assets/cameras_catalogue/$brand/$modelId/images/';
+    String textFolderPath = 'assets/cameras_catalogue/$brand/$modelId/texts/';
 
     // Dynamically load all images in the folder
     List<String> imagePaths = await _loadImagesFromFolder(imageFolderPath);
+    // Dynamically load all text files in the folder
+    List<String> textFiles = await _loadTextFilesFromFolder(textFolderPath);
 
     List<Widget> thumbnailWidgets = imagePaths.map((path) {
       return GestureDetector(
@@ -102,9 +106,24 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
       );
     }).toList();
 
-
-    String textPath = 'assets/texts/cameras/$brand/$modelId.txt';
-    String cameraDescription = await _readCameraDescription(textPath);
+    List<Widget> textDropdownWidgets = textFiles.map((filePath) {
+      String fileName = filePath.split('/').last; // Extract the file name
+      return FutureBuilder<String>(
+        future: _readCameraDescription(filePath), // Read the content of the text file
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const CircularProgressIndicator(); // Loading indicator
+          }
+          if (snapshot.hasError) {
+            return Text('Error loading $fileName'); // Error message
+          }
+          return ExpansionTile(
+            title: Text(fileName.replaceAll('_', ' ').split('.').first), // Remove extension and replace underscores
+            children: [Text(snapshot.data ?? '')], // Show the content of the text file
+          );
+        },
+      );
+    }).toList();
 
     showDialog(
       context: context,
@@ -122,7 +141,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                 const SizedBox(height: 10.0),
                 ...detailWidgets,
                 const SizedBox(height: 10.0),
-                Text(cameraDescription),
+                ...textDropdownWidgets, // Dynamically generated dropdowns
               ],
             ),
           ),
@@ -139,15 +158,6 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     );
   }
 
-  Future<String> _readCameraDescription(String path) async {
-    try {
-      return await rootBundle.loadString(path);
-    } catch (e) {
-      print("Error reading text file: $e");
-      return "Description not available.";
-    }
-  }
-
   Future<List<String>> _loadImagesFromFolder(String folderPath) async {
     final manifestContent = await rootBundle.loadString('AssetManifest.json');
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
@@ -158,6 +168,27 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
         .toList();
 
     return imagePaths;
+  }
+
+  Future<List<String>> _loadTextFilesFromFolder(String folderPath) async {
+    final manifestContent = await rootBundle.loadString('AssetManifest.json');
+    final Map<String, dynamic> manifestMap = json.decode(manifestContent);
+
+    // Filter for text files that are in the desired folder path
+    final textFiles = manifestMap.keys
+        .where((String key) => key.startsWith(folderPath) && key.endsWith('.txt'))
+        .toList();
+
+    return textFiles;
+  }
+
+  Future<String> _readCameraDescription(String path) async {
+    try {
+      return await rootBundle.loadString(path);
+    } catch (e) {
+      print("Error reading text file: $e");
+      return "Description not available.";
+    }
   }
 
   void _showEnlargedImage(BuildContext context, List<String> imagePaths, String selectedImage) {
@@ -182,7 +213,6 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
       },
     );
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -225,6 +255,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                   },
                 ),
               ),
+
             if (filteredBrands.isEmpty && selectedBrand != null)
               Flexible(
                 child: ListView.builder(
