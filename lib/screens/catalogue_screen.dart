@@ -17,14 +17,25 @@ import 'package:analog_photography_db/screens/catalogue_photochemistry_screen.da
 class CatalogueScreen extends StatelessWidget {
   const CatalogueScreen({Key? key}) : super(key: key);
 
-  Widget _catalogueButton(String label, VoidCallback onPressed) {
+  Widget _catalogueButton(String label, IconData icon, VoidCallback onPressed) {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        foregroundColor: Colors.white, backgroundColor: Colors.grey,
-        textStyle: const TextStyle(fontSize: 18),
+        backgroundColor: Colors.white,
+        padding: const EdgeInsets.all(20),
+        elevation: 5,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
+        ),
       ),
-      child: Text(label),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, size: 50, color: Colors.black),
+          const SizedBox(height: 10),
+          Text(label, style: const TextStyle(fontSize: 18, color: Colors.black)),
+        ],
+      ),
     );
   }
 
@@ -32,78 +43,118 @@ class CatalogueScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey,
-        title: const Text('Catalogue'),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
+        title: const Text(
+          'Catalogue',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
-      body: SafeArea(
+      body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: GridView.count(
-            crossAxisCount: 2,
-            childAspectRatio: 3 / 2,
-            crossAxisSpacing: 20,
-            mainAxisSpacing: 20,
-            children: [
-              _catalogueButton('Cameras', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueCamerasScreen()));
-              }),
-              _catalogueButton('Lenses', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueLensesScreen()));
-              }),
-              _catalogueButton('Flashes', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueFlashesScreen()));
-              }),
-              _catalogueButton('Exposure / Flash Meters', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueMetersScreen()));
-              }),
-              _catalogueButton('Filters', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueFiltersScreen()));
-              }),
-              _catalogueButton('Films', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueFilmsScreen()));
-              }),
-              _catalogueButton('Photo Papers', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CataloguePhotoPapersScreen()));
-              }),
-              _catalogueButton('Enlargers', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueEnlargersScreen()));
-              }),
-              _catalogueButton('Color Analyzers', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueColorAnalyzersScreen()));
-              }),
-              _catalogueButton('Film Processors', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueProcessorsScreen()));
-              }),
-              _catalogueButton('Paper Dryers', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueDryersScreen()));
-              }),
-              _catalogueButton('Print Washers', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CataloguePrintWashersScreen()));
-              }),
-              _catalogueButton('Film Scanners', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueScannersScreen()));
-              }),
-              _catalogueButton('Photochemistry', () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CatalogueChemicalsScreen()));
-              }),
-            ],
+          padding: const EdgeInsets.all(16.0),
+          child: GridView.builder(
+            shrinkWrap: true,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              crossAxisSpacing: 16,
+              mainAxisSpacing: 16,
+            ),
+            itemCount: catalogueItems.length,
+            itemBuilder: (context, index) {
+              return _catalogueButton(
+                catalogueItems[index]['label']!,
+                catalogueItems[index]['icon']!,
+                    () {  // Corrected onPressed to use the context
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => catalogueItems[index]['screen']!,
+                    ),
+                  );
+                },
+              );
+            },
           ),
         ),
       ),
     );
   }
 }
+
+final List<Map<String, dynamic>> catalogueItems = [
+  {
+    'label': 'Cameras',
+    'icon': Icons.camera,
+    'screen': const CatalogueCamerasScreen(),
+  },
+  {
+    'label': 'Lenses',
+    'icon': Icons.camera_alt,
+    'screen': const CatalogueLensesScreen(),
+  },
+  {
+    'label': 'Flashes',
+    'icon': Icons.flash_on,
+    'screen': const CatalogueFlashesScreen(),
+  },
+  {
+    'label': 'Exposure / Flash Meters',
+    'icon': Icons.speed,
+    'screen': const CatalogueMetersScreen(),
+  },
+  {
+    'label': 'Filters',
+    'icon': Icons.filter,
+    'screen': const CatalogueFiltersScreen(),
+  },
+  {
+    'label': 'Films',
+    'icon': Icons.movie,
+    'screen': const CatalogueFilmsScreen(),
+  },
+  {
+    'label': 'Photo Papers',
+    'icon': Icons.photo,
+    'screen': const CataloguePhotoPapersScreen(),
+  },
+  {
+    'label': 'Enlargers',
+    'icon': Icons.crop,
+    'screen': const CatalogueEnlargersScreen(),
+  },
+  {
+    'label': 'Color Analyzers',
+    'icon': Icons.color_lens,
+    'screen': const CatalogueColorAnalyzersScreen(),
+  },
+  {
+    'label': 'Film Processors',
+    'icon': Icons.science,
+    'screen': const CatalogueProcessorsScreen(),
+  },
+  {
+    'label': 'Paper Dryers',
+    'icon': Icons.dry,
+    'screen': const CatalogueDryersScreen(),
+  },
+  {
+    'label': 'Print Washers',
+    'icon': Icons.wash,
+    'screen': const CataloguePrintWashersScreen(),
+  },
+  {
+    'label': 'Film Scanners',
+    'icon': Icons.scanner,
+    'screen': const CatalogueScannersScreen(),
+  },
+  {
+    'label': 'Photochemistry',
+    'icon': Icons.science,
+    'screen': const CatalogueChemicalsScreen(),
+  },
+];

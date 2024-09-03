@@ -55,8 +55,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
   _loadCameraModels(String brand) async {
     try {
       String tableName = '${brand.toLowerCase()}_cameras_catalogue';
-      var models =
-      await CamerasCatalogueDatabaseHelper().getCameraModels(tableName);
+      var models = await CamerasCatalogueDatabaseHelper().getCameraModels(tableName);
       setState(() {
         cameraModels = models.map((e) => e['model'].toString()).toList();
       });
@@ -85,7 +84,10 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     }).toList();
 
     List<Widget> detailWidgets = details.entries
-        .where((entry) => entry.value != null && entry.value.toString().isNotEmpty && !excludedColumns.contains(entry.key))
+        .where((entry) =>
+    entry.value != null &&
+        entry.value.toString().isNotEmpty &&
+        !excludedColumns.contains(entry.key))
         .map((entry) {
       return Container(
         width: double.infinity,
@@ -98,7 +100,8 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(entry.key.replaceAll('_', ' '), style: const TextStyle(fontWeight: FontWeight.bold)),
+            Text(entry.key.replaceAll('_', ' '),
+                style: const TextStyle(fontWeight: FontWeight.bold)),
             const SizedBox(height: 4.0),
             Text(entry.value.toString()),
           ],
@@ -218,62 +221,114 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey,
-        title: const Text('Cameras Catalogue'),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
+        title: const Text(
+          'Cameras Catalogue',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            TextField(
-              controller: brandController,
-              decoration: InputDecoration(
-                labelText: 'Search or Select a Brand',
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8.0),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextField(
+                controller: brandController,
+                decoration: InputDecoration(
+                  labelText: 'Search or Select a Brand',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 10.0),
-            if (filteredBrands.isNotEmpty)
-              Flexible(
-                child: ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: filteredBrands.length,
-                  itemBuilder: (context, index) {
-                    return ListTile(
-                      title: Text(filteredBrands[index]),
-                      onTap: () {
-                        setState(() {
-                          selectedBrand = filteredBrands[index];
-                          brandController.text = selectedBrand!;
-                          _loadCameraModels(selectedBrand!);
-                          filteredBrands = [];
-                        });
-                      },
-                    );
-                  },
+              const SizedBox(height: 20.0),
+              if (filteredBrands.isNotEmpty)
+                Flexible(
+                  child: GridView.builder(
+                    shrinkWrap: true,
+                    itemCount: filteredBrands.length,
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 16,
+                      mainAxisSpacing: 16,
+                    ),
+                    itemBuilder: (context, index) {
+                      return ElevatedButton(
+                        onPressed: () {
+                          setState(() {
+                            selectedBrand = filteredBrands[index];
+                            brandController.text = selectedBrand!;
+                            _loadCameraModels(selectedBrand!);
+                            filteredBrands = [];
+                          });
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          padding: const EdgeInsets.all(20),
+                          elevation: 5,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                        ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(Icons.camera_alt, size: 50, color: Colors.black),
+                            const SizedBox(height: 10),
+                            Text(filteredBrands[index], style: const TextStyle(fontSize: 18, color: Colors.black)),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
                 ),
-              ),
 
-            if (filteredBrands.isEmpty && selectedBrand != null)
-              Flexible(
-                child: ListView.builder(
-                  itemCount: cameraModels.length,
-                  itemBuilder: (context, index) {
-                    return ListTile(
-                      title: Text(cameraModels[index]),
-                      onTap: () async {
-                        String tableName = '${selectedBrand!.toLowerCase()}_cameras_catalogue';
-                        Map<String, dynamic> details = await CamerasCatalogueDatabaseHelper().getCameraDetails(tableName, cameraModels[index]);
-
-                        _showCameraDetails(context, details);
-                      },
-                    );
-                  },
+              if (filteredBrands.isEmpty && selectedBrand != null)
+                Flexible(
+                  child: GridView.builder(
+                    shrinkWrap: true,
+                    itemCount: cameraModels.length,
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 16,
+                      mainAxisSpacing: 16,
+                    ),
+                    itemBuilder: (context, index) {
+                      return ElevatedButton(
+                        onPressed: () async {
+                          String tableName = '${selectedBrand!.toLowerCase()}_cameras_catalogue';
+                          Map<String, dynamic> details = await CamerasCatalogueDatabaseHelper().getCameraDetails(tableName, cameraModels[index]);
+                          _showCameraDetails(context, details);
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          padding: const EdgeInsets.all(20),
+                          elevation: 5,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                        ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(Icons.camera, size: 50, color: Colors.black),
+                            const SizedBox(height: 10),
+                            Text(cameraModels[index], style: const TextStyle(fontSize: 18, color: Colors.black)),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
                 ),
-              ),
-          ],
+            ],
+          ),
         ),
       ),
     );
