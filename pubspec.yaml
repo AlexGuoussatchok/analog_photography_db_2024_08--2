@@ -31,6 +31,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    # DATABASES
     - assets/databases/cameras_catalogue.db
     - assets/databases/chemicals_catalogue.db
     - assets/databases/dev_chart.db
@@ -42,9 +43,33 @@ flutter:
     - assets/databases/lenses_catalogue.db
     - assets/databases/processors_catalogue.db
 
-
+    # CAMERAS CATALOGUE ASSETS
+    # Canon
+    - assets/cameras_catalogue/canon/40/images/
+    - assets/cameras_catalogue/canon/40/texts/
+    - assets/cameras_catalogue/canon/42/images/
+    - assets/cameras_catalogue/canon/42/texts/
     - assets/cameras_catalogue/canon/215/images/
     - assets/cameras_catalogue/canon/215/texts/
+    # Fujica
+    - assets/cameras_catalogue/fujica/24/images/
+    - assets/cameras_catalogue/fujica/24/texts/
+    - assets/cameras_catalogue/fujica/59/images/
+    - assets/cameras_catalogue/fujica/59/texts/
+    # Konica
+    - assets/cameras_catalogue/konica/56/images/
+    - assets/cameras_catalogue/konica/56/texts/
+    # Leica
+    - assets/cameras_catalogue/leica/45/images/
+    - assets/cameras_catalogue/leica/45/texts/
+    # Topcon
+    - assets/cameras_catalogue/topcon/26/images/
+    - assets/cameras_catalogue/topcon/26/texts/
+    - assets/cameras_catalogue/topcon/27/images/
+    - assets/cameras_catalogue/topcon/27/texts/
+
+
+    # ----------------------------------------------------
 
     - assets/images/developers/
 
@@ -74,8 +99,6 @@ flutter:
 
 
     - assets/images/scanners/minolta/
-
-    - assets/texts/cameras/canon/
 
     - assets/texts/developer/
 

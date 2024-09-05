@@ -1,0 +1,25 @@
+AZ-1 [1977 - 1980#]
+
+The AZ-1 was the early 1978 Fujica line-up's replacement for the ST901, and sold alongside the ST801, ST705 and ST605 (as can be seen in these 1978 dealer guidance notes): that is, until the ST605n and ST705w came along, and the ST801 was discontinued later in 1978. 
+
+Many Internet sources describe the AZ-1 as the last M42 Fujica, but obviously it wasn't: the ST605n, ST705w, and ST605 II were yet to come. While the AZ-1 began to appear for sale in 1978, it was officially launched for export in June 1977, and so predates the ST605 II by a whole year.
+
+Like its predecessor, the AZ-1 offered aperture-priority TTL metering and an electronically controlled continuously variable shutter. At first glance, the ST901 specification appears to have been modestly simplified. The shutter speed range was reduced to 1/2 to 1/1000, and there were only three mechanical speeds of 1/60, 1/250 and 1/1000 (with no metering). BUT, while the ST901 offered fully-automatic exposure, the AZ-1 provided reduced-automatic control, as a consequence of the AE lock; a detail turned to a virtue in AZ-1 literature.
+
+So long as the AZ-1's shutter release button remained half-depressed (activating the meter), the initial shutter speed setting became locked-in, regardless of subsequent changes to the brightness of the scene, or the user's adjustment of the lens aperture setting. Thus a fresh reading had to be made after making exposure adjustments (e.g. via a change of aperture). By contrast, the ST901's auto-exposure system continuously responded to changes made or occurring while metering was active.
+
+Advertising literature described the benefits of the AE lock in the context of back-light control, whereby the fractional exposure controls could be deployed (i.e. adjusting the automatic shutter speed by +2, +1, -1, or -2 stops via the shutter speed dial). However, I don't believe this is a feature the amateur buyer of this camera would have relished.
+ 
+Some Internet reviewers are puzzled by the limited range of mechanical shutter speeds, but these need to be considered in the context of the era. Other popular auto-exposure cameras - for example, the 1977 Pentax ME - had a single mechanical shutter speed, so the AZ-1's three settings were actually quite good.
+
+The AZ-1 also introduced changes to its forerunner's defining characteristic: the viewfinder display became a bank of 7 LED lights, indicating the camera's shutter speed on a reduced and approximated scale of 1/2 to 1/15, 1/30, 1/60, 1/125, 1/250, 1/500, 1/1000 (compared to the ST901's 14 point digital LED scale).
+
+The AZ-1 was the first SLR to be bundled with a zoom lens as standard. This was the Fujinon-Z 43-75mm f3.5 - 4.5 (7 elements in 7 groups), but Amateur Photographer magazine's test report rated their test lens' performance as "poor" overall ... although they might have had a duff lens. Alternatively, the camera could be purchased with a Fujinon 55mm f1.8 (6 elements in 4 groups), or 50mm f1.4 (7 elements in 6 groups) lenses (see the Fujinon lenses page for more details). The AZ-1 also had the facility to connect the new Fujica Auto winder, plus there was a dedicated Fujica Auto Strobo AZ flash gun.
+
+With a recommended price tag of around £228, fitted with the zoom lens, this was not a cheap camera. Neither was the Auto Winder, with a price tag of around £90.
+ 
+(#) I had assumed an AZ-1 production end-date of 1980, because that's when the AX series cameras were launched, but a trawl of on-line Popular Photography magazines has revealed that the AZ-1 was still being sold in the USA as late as 1985.
+
+At some point in its production, the AZ-1 appears to have received a make-over. The "Auto Electro" pentaprism badge of the ST901 was revived, and the prism housing got an inset cover, the idea being borrowed from various other camera models, but I think it looks rather good. The second version introduced a black finish option. Internet images of this variation seem to be less numerous than the naked-prism version, and are predominantly black models.
+
+I don't have an AZ-1 in my collection, as I've always felt a bit ambivalent about its inclusion with the other M42 models. I tend to regard it as not being a child of the ST901, but more of a parent to the 1980s AX models with their programmed exposure modes facilitated by an electronically timed shutter. It's the ancestor of a family of Fujica models that followed, rather than led innovation.
