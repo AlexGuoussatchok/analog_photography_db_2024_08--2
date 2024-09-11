@@ -64,7 +64,8 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
 
   Future<void> _loadFilmNames(String brand) async {
     try {
-      var models = await FilmsCatalogueDatabaseHelper().getFilmsNamesByBrand(brand);
+      var models =
+      await FilmsCatalogueDatabaseHelper().getFilmsNamesByBrand(brand);
       setState(() {
         filmNames = models.map((e) => e['name'].toString()).toList();
       });
@@ -75,12 +76,29 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
     }
   }
 
-  void _showFilmDetails(BuildContext context, Map<String, dynamic> details) {
+  void _showFilmDetails(BuildContext context, Map<String, dynamic> details) async {
+    // Define columns to exclude from displaying
     List<String> excludedColumns = ['id', 'name'];
     String brand = selectedBrand!.toLowerCase();
-    String imageId = details['id'].toString();
-    String imagePath = 'assets/images/films/$brand/$imageId.jpg';
+    String filmId = details['id'].toString();
+    String imageFolderPath = 'assets/films_catalogue/$brand/$filmId/images/';
+    String textFolderPath = 'assets/films_catalogue/$brand/$filmId/texts/';
 
+    // Dynamically load all images in the folder
+    List<String> imagePaths = await _loadImagesFromFolder(imageFolderPath);
+
+    // Dynamically load all text files in the folder
+    List<String> textFiles = await _loadTextFilesFromFolder(textFolderPath);
+
+    // Widgets for image thumbnails
+    List<Widget> thumbnailWidgets = imagePaths.map((path) {
+      return GestureDetector(
+        onTap: () => _showEnlargedImage(context, imagePaths, path),
+        child: Image.asset(path, width: 80, height: 80), // Thumbnail size
+      );
+    }).toList();
+
+    // Widgets for displaying film details
     List<Widget> detailWidgets = details.entries
         .where((entry) =>
     entry.value != null &&
@@ -107,6 +125,27 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
       );
     }).toList();
 
+    // Widgets for displaying text files in collapsible format
+    List<Widget> textDropdownWidgets = textFiles.map((filePath) {
+      String fileName = filePath.split('/').last; // Extract the file name
+      return FutureBuilder<String>(
+        future: _readFilmDescription(filePath), // Read the content of the text file
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const CircularProgressIndicator(); // Loading indicator
+          }
+          if (snapshot.hasError) {
+            return Text('Error loading $fileName'); // Error message
+          }
+          return ExpansionTile(
+            title: Text(fileName.replaceAll('_', ' ').split('.').first), // Remove extension and replace underscores
+            children: [Text(snapshot.data ?? '')], // Show the content of the text file
+          );
+        },
+      );
+    }).toList();
+
+    // Show dialog with film details, images, and text files
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -115,11 +154,15 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset(imagePath),
-                const SizedBox(height: 10.0),
-                Text(details['name']?.replaceAll('_', ' ') ?? "Unknown Film"),
+                Wrap(
+                  spacing: 8.0,
+                  runSpacing: 8.0,
+                  children: thumbnailWidgets,
+                ),
                 const SizedBox(height: 10.0),
                 ...detailWidgets,
+                const SizedBox(height: 10.0),
+                ...textDropdownWidgets, // Dynamically generated dropdowns
               ],
             ),
           ),
@@ -134,6 +177,64 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
         );
       },
     );
+  }
+
+  // Method to show enlarged image
+  void _showEnlargedImage(BuildContext context, List<String> imagePaths, String currentImagePath) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Dialog(
+          child: Column(
+            children: [
+              Expanded(
+                child: PageView.builder(
+                  itemCount: imagePaths.length,
+                  controller: PageController(initialPage: imagePaths.indexOf(currentImagePath)),
+                  itemBuilder: (context, index) {
+                    return Image.asset(imagePaths[index]);
+                  },
+                ),
+              ),
+              TextButton(
+                child: const Text('Close'),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Future<List<String>> _loadImagesFromFolder(String folderPath) async {
+    final manifestContent = await rootBundle.loadString('AssetManifest.json');
+    final Map<String, dynamic> manifestMap = json.decode(manifestContent);
+
+    // Filter for files that are in the desired folder path
+    final imagePaths = manifestMap.keys
+        .where((String key) => key.startsWith(folderPath))
+        .toList();
+
+    return imagePaths;
+  }
+
+  Future<List<String>> _loadTextFilesFromFolder(String folderPath) async {
+    final manifestContent = await rootBundle.loadString('AssetManifest.json');
+    final Map<String, dynamic> manifestMap = json.decode(manifestContent);
+
+    // Filter for text files that are in the desired folder path
+    final textFiles = manifestMap.keys
+        .where((String key) => key.startsWith(folderPath) && key.endsWith('.txt'))
+        .toList();
+
+    return textFiles;
+  }
+
+  Future<String> _readFilmDescription(String filePath) async {
+    return await rootBundle.loadString(filePath);
   }
 
   @override
@@ -184,7 +285,8 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                     controller: ScrollController(),
                     shrinkWrap: true,
                     itemCount: filteredBrands.length,
-                    gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                    gridDelegate:
+                    SliverGridDelegateWithMaxCrossAxisExtent(
                       maxCrossAxisExtent: 200,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16,
@@ -210,10 +312,12 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Icon(Icons.movie, size: 50, color: Colors.black),
+                            const Icon(Icons.movie,
+                                size: 50, color: Colors.black),
                             const SizedBox(height: 10),
                             Text(filteredBrands[index],
-                                style: const TextStyle(fontSize: 18, color: Colors.black)),
+                                style: const TextStyle(
+                                    fontSize: 18, color: Colors.black)),
                           ],
                         ),
                       );
@@ -227,7 +331,8 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                     controller: ScrollController(),
                     shrinkWrap: true,
                     itemCount: filmNames.length,
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    gridDelegate:
+                    const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16,
@@ -235,13 +340,17 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                     itemBuilder: (context, index) {
                       return ElevatedButton(
                         onPressed: () async {
-                          Map<String, dynamic>? details = await FilmsCatalogueDatabaseHelper().getFilmDetailsByBrandAndName(
+                          Map<String, dynamic>? details =
+                          await FilmsCatalogueDatabaseHelper()
+                              .getFilmDetailsByBrandAndName(
                               selectedBrand!, filmNames[index]);
                           if (details != null) {
                             _showFilmDetails(context, details);
                           } else {
                             ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(content: Text('Error: Film details not found.')),
+                              SnackBar(
+                                  content: Text(
+                                      'Error: Film details not found.')),
                             );
                           }
                         },
@@ -256,9 +365,12 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Icon(Icons.movie_filter, size: 50, color: Colors.black),
+                            const Icon(Icons.movie_filter,
+                                size: 50, color: Colors.black),
                             const SizedBox(height: 10),
-                            Text(filmNames[index], style: const TextStyle(fontSize: 18, color: Colors.black)),
+                            Text(filmNames[index],
+                                style: const TextStyle(
+                                    fontSize: 18, color: Colors.black)),
                           ],
                         ),
                       );
