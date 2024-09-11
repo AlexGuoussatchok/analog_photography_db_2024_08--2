@@ -50,17 +50,39 @@ flutter:
     - assets/cameras_catalogue/canon/40/texts/
     - assets/cameras_catalogue/canon/42/images/
     - assets/cameras_catalogue/canon/42/texts/
+    - assets/cameras_catalogue/canon/70/images/
+    - assets/cameras_catalogue/canon/70/texts/
+    - assets/cameras_catalogue/canon/72/images/
+    - assets/cameras_catalogue/canon/72/texts/
+    - assets/cameras_catalogue/canon/208/images/
+    - assets/cameras_catalogue/canon/208/texts/
+    - assets/cameras_catalogue/canon/210/images/
+    - assets/cameras_catalogue/canon/210/texts/
     - assets/cameras_catalogue/canon/215/images/
     - assets/cameras_catalogue/canon/215/texts/
+    - assets/cameras_catalogue/canon/251/images/
+    - assets/cameras_catalogue/canon/251/texts/
+    # Chinon
+    - assets/cameras_catalogue/chinon/19/images/
+    - assets/cameras_catalogue/chinon/19/texts/
+    # Contax
+    - assets/cameras_catalogue/contax/7/images/
+    - assets/cameras_catalogue/contax/7/texts/
+    - assets/cameras_catalogue/contax/17/images/
+    - assets/cameras_catalogue/contax/17/texts/
     # Fujica
     - assets/cameras_catalogue/fujica/24/images/
     - assets/cameras_catalogue/fujica/24/texts/
     - assets/cameras_catalogue/fujica/59/images/
     - assets/cameras_catalogue/fujica/59/texts/
     # Konica
+    - assets/cameras_catalogue/konica/14/images/
+    - assets/cameras_catalogue/konica/14/texts/
     - assets/cameras_catalogue/konica/56/images/
     - assets/cameras_catalogue/konica/56/texts/
     # Leica
+    - assets/cameras_catalogue/leica/25/images/
+    - assets/cameras_catalogue/leica/25/texts/
     - assets/cameras_catalogue/leica/45/images/
     - assets/cameras_catalogue/leica/45/texts/
     # Topcon
@@ -77,11 +99,13 @@ flutter:
     - assets/images/dryers/ilford/
 
 
-    - assets/images/films/adox/
-    - assets/images/films/agfa/
-    - assets/images/films/ilford/
-    - assets/images/films/orwo/
-    - assets/images/films/tasma/
+    # FILMS CATALOGUE ASSETS
+    # Agfa
+    - assets/films_catalogue/agfa/1/images/
+    - assets/films_catalogue/agfa/1/texts/
+
+
+    # -----------------------------------------------------
 
     - assets/images/fixers/
 

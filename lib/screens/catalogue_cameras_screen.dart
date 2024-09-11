@@ -1,6 +1,6 @@
-import 'dart:convert';  // Import this for JSON decoding
+import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; // Import this for rootBundle
+import 'package:flutter/services.dart';
 import 'package:analog_photography_db/database_helpers/cameras_catalogue_database_helper.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
@@ -272,7 +272,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                     controller: ScrollController(),
                     shrinkWrap: true,
                     itemCount: filteredBrands.length,
-                    gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                    gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                       maxCrossAxisExtent: 200,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16,
