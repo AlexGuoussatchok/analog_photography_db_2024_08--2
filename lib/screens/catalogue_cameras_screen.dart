@@ -2,6 +2,8 @@ import 'dart:convert';  // Import this for JSON decoding
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; // Import this for rootBundle
 import 'package:analog_photography_db/database_helpers/cameras_catalogue_database_helper.dart';
+import 'package:photo_view/photo_view.dart';
+import 'package:photo_view/photo_view_gallery.dart';
 
 class CatalogueCamerasScreen extends StatefulWidget {
   const CatalogueCamerasScreen({super.key});
@@ -16,6 +18,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
   List<String> cameraModels = [];
   String? selectedBrand;
   TextEditingController brandController = TextEditingController();
+  bool isLoading = false; // Initialize loading state
 
   @override
   void initState() {
@@ -33,13 +36,22 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
 
   Future<void> _loadCameraBrands() async {
     try {
+      setState(() {
+        isLoading = true; // Show loading indicator
+      });
       var brands = await CamerasCatalogueDatabaseHelper().getCameraBrands();
       setState(() {
         cameraBrands = brands.map((e) => e['brand'].toString()).toList();
         filteredBrands = cameraBrands;
+        isLoading = false; // Hide loading indicator
       });
     } catch (e) {
-      print(e);
+      setState(() {
+        isLoading = false; // Hide loading indicator
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error loading brands: $e')),
+      );
     }
   }
 
@@ -52,7 +64,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     });
   }
 
-  _loadCameraModels(String brand) async {
+  Future<void> _loadCameraModels(String brand) async {
     try {
       String tableName = '${brand.toLowerCase()}_cameras_catalogue';
       var models = await CamerasCatalogueDatabaseHelper().getCameraModels(tableName);
@@ -60,7 +72,9 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
         cameraModels = models.map((e) => e['model'].toString()).toList();
       });
     } catch (e) {
-      print(e);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error loading camera models: $e')),
+      );
     }
   }
 
@@ -71,9 +85,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     String imageFolderPath = 'assets/cameras_catalogue/$brand/$modelId/images/';
     String textFolderPath = 'assets/cameras_catalogue/$brand/$modelId/texts/';
 
-    // Dynamically load all images in the folder
     List<String> imagePaths = await _loadImagesFromFolder(imageFolderPath);
-    // Dynamically load all text files in the folder
     List<String> textFiles = await _loadTextFilesFromFolder(textFolderPath);
 
     List<Widget> thumbnailWidgets = imagePaths.map((path) {
@@ -112,17 +124,17 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     List<Widget> textDropdownWidgets = textFiles.map((filePath) {
       String fileName = filePath.split('/').last; // Extract the file name
       return FutureBuilder<String>(
-        future: _readCameraDescription(filePath), // Read the content of the text file
+        future: _readCameraDescription(filePath),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const CircularProgressIndicator(); // Loading indicator
+            return const CircularProgressIndicator();
           }
           if (snapshot.hasError) {
-            return Text('Error loading $fileName'); // Error message
+            return Text('Error loading $fileName');
           }
           return ExpansionTile(
-            title: Text(fileName.replaceAll('_', ' ').split('.').first), // Remove extension and replace underscores
-            children: [Text(snapshot.data ?? '')], // Show the content of the text file
+            title: Text(fileName.replaceAll('_', ' ').split('.').first),
+            children: [Text(snapshot.data ?? '')],
           );
         },
       );
@@ -144,7 +156,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                 const SizedBox(height: 10.0),
                 ...detailWidgets,
                 const SizedBox(height: 10.0),
-                ...textDropdownWidgets, // Dynamically generated dropdowns
+                ...textDropdownWidgets,
               ],
             ),
           ),
@@ -164,24 +176,18 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
   Future<List<String>> _loadImagesFromFolder(String folderPath) async {
     final manifestContent = await rootBundle.loadString('AssetManifest.json');
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
-
-    // Filter for files that are in the desired folder path
     final imagePaths = manifestMap.keys
         .where((String key) => key.startsWith(folderPath))
         .toList();
-
     return imagePaths;
   }
 
   Future<List<String>> _loadTextFilesFromFolder(String folderPath) async {
     final manifestContent = await rootBundle.loadString('AssetManifest.json');
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
-
-    // Filter for text files that are in the desired folder path
     final textFiles = manifestMap.keys
         .where((String key) => key.startsWith(folderPath) && key.endsWith('.txt'))
         .toList();
-
     return textFiles;
   }
 
@@ -196,21 +202,22 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
 
   void _showEnlargedImage(BuildContext context, List<String> imagePaths, String selectedImage) {
     int initialIndex = imagePaths.indexOf(selectedImage);
-
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return Dialog(
-          child: StatefulBuilder(
-            builder: (BuildContext context, StateSetter setState) {
-              return PageView.builder(
-                itemCount: imagePaths.length,
-                controller: PageController(initialPage: initialIndex),
-                itemBuilder: (context, index) {
-                  return Image.asset(imagePaths[index]);
-                },
+          child: PhotoViewGallery.builder(
+            itemCount: imagePaths.length,
+            pageController: PageController(initialPage: initialIndex),
+            builder: (context, index) {
+              return PhotoViewGalleryPageOptions(
+                imageProvider: AssetImage(imagePaths[index]),
+                minScale: PhotoViewComputedScale.contained,
+                maxScale: PhotoViewComputedScale.covered * 2,
               );
             },
+            scrollPhysics: const BouncingScrollPhysics(),
+            backgroundDecoration: const BoxDecoration(color: Colors.black),
           ),
         );
       },
@@ -233,7 +240,9 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
           ),
         ),
       ),
-      body: Center(
+      body: isLoading
+          ? const Center(child: CircularProgressIndicator()) // Show loading indicator when loading
+          : Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -243,6 +252,13 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                 controller: brandController,
                 decoration: InputDecoration(
                   labelText: 'Search or Select a Brand',
+                  suffixIcon: IconButton(
+                    icon: const Icon(Icons.clear),
+                    onPressed: () {
+                      brandController.clear();
+                      _filterBrands(); // Reset filtered brands
+                    },
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
                   ),
@@ -252,10 +268,12 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
               if (filteredBrands.isNotEmpty)
                 Flexible(
                   child: GridView.builder(
+                    primary: false,
+                    controller: ScrollController(),
                     shrinkWrap: true,
                     itemCount: filteredBrands.length,
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
+                    gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                      maxCrossAxisExtent: 200,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16,
                     ),
@@ -280,7 +298,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            Icon(Icons.camera_alt, size: 50, color: Colors.black),
+                            const Icon(Icons.camera_alt, size: 50, color: Colors.black),
                             const SizedBox(height: 10),
                             Text(filteredBrands[index], style: const TextStyle(fontSize: 18, color: Colors.black)),
                           ],
@@ -289,10 +307,11 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                     },
                   ),
                 ),
-
               if (filteredBrands.isEmpty && selectedBrand != null)
                 Flexible(
                   child: GridView.builder(
+                    primary: false,
+                    controller: ScrollController(),
                     shrinkWrap: true,
                     itemCount: cameraModels.length,
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -318,7 +337,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            Icon(Icons.camera, size: 50, color: Colors.black),
+                            const Icon(Icons.camera, size: 50, color: Colors.black),
                             const SizedBox(height: 10),
                             Text(cameraModels[index], style: const TextStyle(fontSize: 18, color: Colors.black)),
                           ],
