@@ -14,8 +14,10 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
   List<String> filmBrands = [];
   List<String> filteredBrands = [];
   List<String> filmNames = [];
+  List<String> filteredFilmNames = [];
   String? selectedBrand;
   TextEditingController brandController = TextEditingController();
+  TextEditingController filmController = TextEditingController();
   bool isLoading = false;
 
   @override
@@ -23,12 +25,15 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
     super.initState();
     _loadFilmsBrands();
     brandController.addListener(_filterBrands);
+    filmController.addListener(_filterFilmNames);
   }
 
   @override
   void dispose() {
     brandController.removeListener(_filterBrands);
     brandController.dispose();
+    filmController.removeListener(_filterFilmNames);
+    filmController.dispose();
     super.dispose();
   }
 
@@ -62,12 +67,22 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
     });
   }
 
+  void _filterFilmNames() {
+    setState(() {
+      filteredFilmNames = filmNames
+          .where((name) =>
+          name.toLowerCase().contains(filmController.text.toLowerCase()))
+          .toList();
+    });
+  }
+
   Future<void> _loadFilmNames(String brand) async {
     try {
       var models =
       await FilmsCatalogueDatabaseHelper().getFilmsNamesByBrand(brand);
       setState(() {
         filmNames = models.map((e) => e['name'].toString()).toList();
+        filteredFilmNames = filmNames;
       });
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -77,28 +92,22 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
   }
 
   void _showFilmDetails(BuildContext context, Map<String, dynamic> details) async {
-    // Define columns to exclude from displaying
     List<String> excludedColumns = ['id', 'name'];
     String brand = selectedBrand!.toLowerCase();
     String filmId = details['id'].toString();
     String imageFolderPath = 'assets/films_catalogue/$brand/$filmId/images/';
     String textFolderPath = 'assets/films_catalogue/$brand/$filmId/texts/';
 
-    // Dynamically load all images in the folder
     List<String> imagePaths = await _loadImagesFromFolder(imageFolderPath);
-
-    // Dynamically load all text files in the folder
     List<String> textFiles = await _loadTextFilesFromFolder(textFolderPath);
 
-    // Widgets for image thumbnails
     List<Widget> thumbnailWidgets = imagePaths.map((path) {
       return GestureDetector(
         onTap: () => _showEnlargedImage(context, imagePaths, path),
-        child: Image.asset(path, width: 80, height: 80), // Thumbnail size
+        child: Image.asset(path, width: 80, height: 80),
       );
     }).toList();
 
-    // Widgets for displaying film details
     List<Widget> detailWidgets = details.entries
         .where((entry) =>
     entry.value != null &&
@@ -125,27 +134,25 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
       );
     }).toList();
 
-    // Widgets for displaying text files in collapsible format
     List<Widget> textDropdownWidgets = textFiles.map((filePath) {
-      String fileName = filePath.split('/').last; // Extract the file name
+      String fileName = filePath.split('/').last;
       return FutureBuilder<String>(
-        future: _readFilmDescription(filePath), // Read the content of the text file
+        future: _readFilmDescription(filePath),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const CircularProgressIndicator(); // Loading indicator
+            return const CircularProgressIndicator();
           }
           if (snapshot.hasError) {
-            return Text('Error loading $fileName'); // Error message
+            return Text('Error loading $fileName');
           }
           return ExpansionTile(
-            title: Text(fileName.replaceAll('_', ' ').split('.').first), // Remove extension and replace underscores
-            children: [Text(snapshot.data ?? '')], // Show the content of the text file
+            title: Text(fileName.replaceAll('_', ' ').split('.').first),
+            children: [Text(snapshot.data ?? '')],
           );
         },
       );
     }).toList();
 
-    // Show dialog with film details, images, and text files
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -162,7 +169,7 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                 const SizedBox(height: 10.0),
                 ...detailWidgets,
                 const SizedBox(height: 10.0),
-                ...textDropdownWidgets, // Dynamically generated dropdowns
+                ...textDropdownWidgets,
               ],
             ),
           ),
@@ -179,7 +186,6 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
     );
   }
 
-  // Method to show enlarged image
   void _showEnlargedImage(BuildContext context, List<String> imagePaths, String currentImagePath) {
     showDialog(
       context: context,
@@ -212,24 +218,18 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
   Future<List<String>> _loadImagesFromFolder(String folderPath) async {
     final manifestContent = await rootBundle.loadString('AssetManifest.json');
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
-
-    // Filter for files that are in the desired folder path
     final imagePaths = manifestMap.keys
         .where((String key) => key.startsWith(folderPath))
         .toList();
-
     return imagePaths;
   }
 
   Future<List<String>> _loadTextFilesFromFolder(String folderPath) async {
     final manifestContent = await rootBundle.loadString('AssetManifest.json');
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
-
-    // Filter for text files that are in the desired folder path
     final textFiles = manifestMap.keys
         .where((String key) => key.startsWith(folderPath) && key.endsWith('.txt'))
         .toList();
-
     return textFiles;
   }
 
@@ -278,22 +278,34 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                 ),
               ),
               const SizedBox(height: 20.0),
+              if (selectedBrand != null)
+                TextField(
+                  controller: filmController,
+                  decoration: InputDecoration(
+                    labelText: 'Search or Select a Film Name',
+                    suffixIcon: IconButton(
+                      icon: const Icon(Icons.clear),
+                      onPressed: () {
+                        filmController.clear();
+                        _filterFilmNames();
+                      },
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                  ),
+                ),
+              const SizedBox(height: 20.0),
               if (filteredBrands.isNotEmpty)
                 Flexible(
-                  child: GridView.builder(
-                    primary: false,
-                    controller: ScrollController(),
+                  child: ListView.builder(
                     shrinkWrap: true,
                     itemCount: filteredBrands.length,
-                    gridDelegate:
-                    SliverGridDelegateWithMaxCrossAxisExtent(
-                      maxCrossAxisExtent: 200,
-                      crossAxisSpacing: 16,
-                      mainAxisSpacing: 16,
-                    ),
                     itemBuilder: (context, index) {
-                      return ElevatedButton(
-                        onPressed: () {
+                      return ListTile(
+                        title: Text(filteredBrands[index]),
+                        leading: const Icon(Icons.movie, size: 30),
+                        onTap: () {
                           setState(() {
                             selectedBrand = filteredBrands[index];
                             brandController.text = selectedBrand!;
@@ -301,25 +313,6 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                             filteredBrands = [];
                           });
                         },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          padding: const EdgeInsets.all(20),
-                          elevation: 5,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                        ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Icon(Icons.movie,
-                                size: 50, color: Colors.black),
-                            const SizedBox(height: 10),
-                            Text(filteredBrands[index],
-                                style: const TextStyle(
-                                    fontSize: 18, color: Colors.black)),
-                          ],
-                        ),
                       );
                     },
                   ),
@@ -330,9 +323,8 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                     primary: false,
                     controller: ScrollController(),
                     shrinkWrap: true,
-                    itemCount: filmNames.length,
-                    gridDelegate:
-                    const SliverGridDelegateWithFixedCrossAxisCount(
+                    itemCount: filteredFilmNames.length,
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16,
@@ -343,7 +335,7 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                           Map<String, dynamic>? details =
                           await FilmsCatalogueDatabaseHelper()
                               .getFilmDetailsByBrandAndName(
-                              selectedBrand!, filmNames[index]);
+                              selectedBrand!, filteredFilmNames[index]);
                           if (details != null) {
                             _showFilmDetails(context, details);
                           } else {
@@ -365,12 +357,10 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Icon(Icons.movie_filter,
-                                size: 50, color: Colors.black),
+                            const Icon(Icons.movie_filter, size: 50, color: Colors.black),
                             const SizedBox(height: 10),
-                            Text(filmNames[index],
-                                style: const TextStyle(
-                                    fontSize: 18, color: Colors.black)),
+                            Text(filteredFilmNames[index],
+                                style: const TextStyle(fontSize: 18, color: Colors.black)),
                           ],
                         ),
                       );
