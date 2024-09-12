@@ -16,38 +16,43 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
   List<String> cameraBrands = [];
   List<String> filteredBrands = [];
   List<String> cameraModels = [];
+  List<String> filteredModels = [];
   String? selectedBrand;
   TextEditingController brandController = TextEditingController();
-  bool isLoading = false; // Initialize loading state
+  TextEditingController modelController = TextEditingController();
+  bool isLoading = false;
 
   @override
   void initState() {
     super.initState();
     _loadCameraBrands();
     brandController.addListener(_filterBrands);
+    modelController.addListener(_filterModels);
   }
 
   @override
   void dispose() {
     brandController.removeListener(_filterBrands);
     brandController.dispose();
+    modelController.removeListener(_filterModels);
+    modelController.dispose();
     super.dispose();
   }
 
   Future<void> _loadCameraBrands() async {
     try {
       setState(() {
-        isLoading = true; // Show loading indicator
+        isLoading = true;
       });
       var brands = await CamerasCatalogueDatabaseHelper().getCameraBrands();
       setState(() {
         cameraBrands = brands.map((e) => e['brand'].toString()).toList();
         filteredBrands = cameraBrands;
-        isLoading = false; // Hide loading indicator
+        isLoading = false;
       });
     } catch (e) {
       setState(() {
-        isLoading = false; // Hide loading indicator
+        isLoading = false;
       });
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Error loading brands: $e')),
@@ -64,12 +69,22 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     });
   }
 
+  void _filterModels() {
+    setState(() {
+      filteredModels = cameraModels
+          .where((model) =>
+          model.toLowerCase().contains(modelController.text.toLowerCase()))
+          .toList();
+    });
+  }
+
   Future<void> _loadCameraModels(String brand) async {
     try {
       String tableName = '${brand.toLowerCase()}_cameras_catalogue';
       var models = await CamerasCatalogueDatabaseHelper().getCameraModels(tableName);
       setState(() {
         cameraModels = models.map((e) => e['model'].toString()).toList();
+        filteredModels = cameraModels;
       });
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -91,7 +106,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     List<Widget> thumbnailWidgets = imagePaths.map((path) {
       return GestureDetector(
         onTap: () => _showEnlargedImage(context, imagePaths, path),
-        child: Image.asset(path, width: 80, height: 80), // Thumbnail size
+        child: Image.asset(path, width: 80, height: 80),
       );
     }).toList();
 
@@ -122,7 +137,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
     }).toList();
 
     List<Widget> textDropdownWidgets = textFiles.map((filePath) {
-      String fileName = filePath.split('/').last; // Extract the file name
+      String fileName = filePath.split('/').last;
       return FutureBuilder<String>(
         future: _readCameraDescription(filePath),
         builder: (context, snapshot) {
@@ -241,7 +256,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
         ),
       ),
       body: isLoading
-          ? const Center(child: CircularProgressIndicator()) // Show loading indicator when loading
+          ? const Center(child: CircularProgressIndicator())
           : Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -256,7 +271,7 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                     icon: const Icon(Icons.clear),
                     onPressed: () {
                       brandController.clear();
-                      _filterBrands(); // Reset filtered brands
+                      _filterBrands();
                     },
                   ),
                   border: OutlineInputBorder(
@@ -265,21 +280,34 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                 ),
               ),
               const SizedBox(height: 20.0),
+              if (selectedBrand != null)
+                TextField(
+                  controller: modelController,
+                  decoration: InputDecoration(
+                    labelText: 'Search or Select a Model',
+                    suffixIcon: IconButton(
+                      icon: const Icon(Icons.clear),
+                      onPressed: () {
+                        modelController.clear();
+                        _filterModels();
+                      },
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                  ),
+                ),
+              const SizedBox(height: 20.0),
               if (filteredBrands.isNotEmpty)
                 Flexible(
-                  child: GridView.builder(
-                    primary: false,
-                    controller: ScrollController(),
+                  child: ListView.builder(
                     shrinkWrap: true,
                     itemCount: filteredBrands.length,
-                    gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                      maxCrossAxisExtent: 200,
-                      crossAxisSpacing: 16,
-                      mainAxisSpacing: 16,
-                    ),
                     itemBuilder: (context, index) {
-                      return ElevatedButton(
-                        onPressed: () {
+                      return ListTile(
+                        title: Text(filteredBrands[index]),
+                        leading: const Icon(Icons.camera_alt, size: 30),
+                        onTap: () {
                           setState(() {
                             selectedBrand = filteredBrands[index];
                             brandController.text = selectedBrand!;
@@ -287,61 +315,25 @@ class _CatalogueCamerasScreenState extends State<CatalogueCamerasScreen> {
                             filteredBrands = [];
                           });
                         },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          padding: const EdgeInsets.all(20),
-                          elevation: 5,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                        ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Icon(Icons.camera_alt, size: 50, color: Colors.black),
-                            const SizedBox(height: 10),
-                            Text(filteredBrands[index], style: const TextStyle(fontSize: 18, color: Colors.black)),
-                          ],
-                        ),
                       );
                     },
                   ),
                 ),
               if (filteredBrands.isEmpty && selectedBrand != null)
                 Flexible(
-                  child: GridView.builder(
-                    primary: false,
-                    controller: ScrollController(),
+                  child: ListView.builder(
                     shrinkWrap: true,
-                    itemCount: cameraModels.length,
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 16,
-                      mainAxisSpacing: 16,
-                    ),
+                    itemCount: filteredModels.length,
                     itemBuilder: (context, index) {
-                      return ElevatedButton(
-                        onPressed: () async {
+                      return ListTile(
+                        title: Text(filteredModels[index]),
+                        leading: const Icon(Icons.camera, size: 30),
+                        onTap: () async {
                           String tableName = '${selectedBrand!.toLowerCase()}_cameras_catalogue';
-                          Map<String, dynamic> details = await CamerasCatalogueDatabaseHelper().getCameraDetails(tableName, cameraModels[index]);
+                          Map<String, dynamic> details = await CamerasCatalogueDatabaseHelper()
+                              .getCameraDetails(tableName, filteredModels[index]);
                           _showCameraDetails(context, details);
                         },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          padding: const EdgeInsets.all(20),
-                          elevation: 5,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                        ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Icon(Icons.camera, size: 50, color: Colors.black),
-                            const SizedBox(height: 10),
-                            Text(cameraModels[index], style: const TextStyle(fontSize: 18, color: Colors.black)),
-                          ],
-                        ),
                       );
                     },
                   ),
