@@ -85,6 +85,20 @@ flutter:
     - assets/cameras_catalogue/leica/25/texts/
     - assets/cameras_catalogue/leica/45/images/
     - assets/cameras_catalogue/leica/45/texts/
+    # Minolta
+    - assets/cameras_catalogue/minolta/176/images/
+    - assets/cameras_catalogue/minolta/176/texts/
+    - assets/cameras_catalogue/minolta/177/images/
+    - assets/cameras_catalogue/minolta/177/texts/
+    - assets/cameras_catalogue/minolta/180/images/
+    - assets/cameras_catalogue/minolta/180/texts/
+    # Nikon
+    - assets/cameras_catalogue/nikon/27/images/
+    - assets/cameras_catalogue/nikon/27/texts/
+    - assets/cameras_catalogue/nikon/123/images/
+    - assets/cameras_catalogue/nikon/123/texts/
+    - assets/cameras_catalogue/nikon/126/images/
+    - assets/cameras_catalogue/nikon/126/texts/
     # Topcon
     - assets/cameras_catalogue/topcon/26/images/
     - assets/cameras_catalogue/topcon/26/texts/
