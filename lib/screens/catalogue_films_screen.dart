@@ -19,6 +19,9 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
   TextEditingController brandController = TextEditingController();
   TextEditingController filmController = TextEditingController();
   bool isLoading = false;
+  int totalBrands = 0; // To store total number of brands
+  int distinctFilmCount = 0; // To store distinct film count
+  int totalFilmCount = 0; // To store total film count including variants
 
   @override
   void initState() {
@@ -46,6 +49,7 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
       setState(() {
         filmBrands = brands.map((e) => e['brand'].toString()).toList();
         filteredBrands = filmBrands;
+        totalBrands = filmBrands.length; // Set total number of brands
         isLoading = false;
       });
     } catch (e) {
@@ -78,11 +82,22 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
 
   Future<void> _loadFilmNames(String brand) async {
     try {
-      var models =
-      await FilmsCatalogueDatabaseHelper().getFilmsNamesByBrand(brand);
+      var models = await FilmsCatalogueDatabaseHelper().getFilmsNamesByBrand(brand);
+
+      // Create a set to keep track of distinct films
+      Set<String> distinctFilms = {};
+      int totalFilms = 0;
+
+      for (var model in models) {
+        distinctFilms.add(model['name'].toString().split('(')[0].trim()); // Get distinct films
+        totalFilms++;
+      }
+
       setState(() {
         filmNames = models.map((e) => e['name'].toString()).toList();
         filteredFilmNames = filmNames;
+        distinctFilmCount = distinctFilms.length; // Number of distinct films
+        totalFilmCount = totalFilms; // Total number of films including variants
       });
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -255,39 +270,21 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
       ),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
-          : Center(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextField(
-                controller: brandController,
-                decoration: InputDecoration(
-                  labelText: 'Search or Select a Brand',
-                  suffixIcon: IconButton(
-                    icon: const Icon(Icons.clear),
-                    onPressed: () {
-                      brandController.clear();
-                      _filterBrands();
-                    },
-                  ),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 20.0),
-              if (selectedBrand != null)
+          : Stack( // Use Stack to keep the status bar at the bottom
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
                 TextField(
-                  controller: filmController,
+                  controller: brandController,
                   decoration: InputDecoration(
-                    labelText: 'Search or Select a Film Name',
+                    labelText: 'Search or Select a Brand',
                     suffixIcon: IconButton(
                       icon: const Icon(Icons.clear),
                       onPressed: () {
-                        filmController.clear();
-                        _filterFilmNames();
+                        brandController.clear();
+                        _filterBrands();
                       },
                     ),
                     border: OutlineInputBorder(
@@ -295,11 +292,28 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                     ),
                   ),
                 ),
-              const SizedBox(height: 20.0),
-              if (filteredBrands.isNotEmpty)
-                Flexible(
-                  child: ListView.builder(
-                    shrinkWrap: true,
+                const SizedBox(height: 20.0),
+                if (selectedBrand != null)
+                  TextField(
+                    controller: filmController,
+                    decoration: InputDecoration(
+                      labelText: 'Search or Select a Film Name',
+                      suffixIcon: IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          filmController.clear();
+                          _filterFilmNames();
+                        },
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                    ),
+                  ),
+                const SizedBox(height: 20.0),
+                Expanded(
+                  child: filteredBrands.isNotEmpty
+                      ? ListView.builder(
                     itemCount: filteredBrands.length,
                     itemBuilder: (context, index) {
                       return ListTile(
@@ -315,11 +329,8 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                         },
                       );
                     },
-                  ),
-                ),
-              if (filteredBrands.isEmpty && selectedBrand != null)
-                Flexible(
-                  child: GridView.builder(
+                  )
+                      : GridView.builder(
                     primary: false,
                     controller: ScrollController(),
                     shrinkWrap: true,
@@ -367,9 +378,29 @@ class _CatalogueFilmsScreenState extends State<CatalogueFilmsScreen> {
                     },
                   ),
                 ),
-            ],
+              ],
+            ),
           ),
-        ),
+          // Status Bar with minimal height fixed at the bottom
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: SizedBox(
+              height: 40, // Minimal height for the status bar
+              width: double.infinity,
+              child: Container(
+                color: Colors.grey.shade200,
+                alignment: Alignment.center,
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: Text(
+                  selectedBrand == null
+                      ? 'Total brands in catalogue: $totalBrands'
+                      : 'Number of films: $distinctFilmCount / $totalFilmCount',
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
