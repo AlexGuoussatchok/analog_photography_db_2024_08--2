@@ -73,6 +73,8 @@ flutter:
     # Fujica
     - assets/cameras_catalogue/fujica/24/images/
     - assets/cameras_catalogue/fujica/24/texts/
+    - assets/cameras_catalogue/fujica/58/images/
+    - assets/cameras_catalogue/fujica/58/texts/
     - assets/cameras_catalogue/fujica/59/images/
     - assets/cameras_catalogue/fujica/59/texts/
     # Konica
@@ -95,10 +97,15 @@ flutter:
     # Nikon
     - assets/cameras_catalogue/nikon/27/images/
     - assets/cameras_catalogue/nikon/27/texts/
+    - assets/cameras_catalogue/nikon/98/images/ #N8008
+    - assets/cameras_catalogue/nikon/98/texts/ #N8008
     - assets/cameras_catalogue/nikon/123/images/
     - assets/cameras_catalogue/nikon/123/texts/
     - assets/cameras_catalogue/nikon/126/images/
     - assets/cameras_catalogue/nikon/126/texts/
+    # Olympus
+    - assets/cameras_catalogue/olympus/105/images/
+    - assets/cameras_catalogue/olympus/105/texts/
     # Topcon
     - assets/cameras_catalogue/topcon/26/images/
     - assets/cameras_catalogue/topcon/26/texts/

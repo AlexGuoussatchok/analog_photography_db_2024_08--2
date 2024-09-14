@@ -1,0 +1,31 @@
+FOCUSING: AF or manual. One-sbot (focus-priority) or continuous (servo) AF. AF range EV-1 to 19. AF lock. 
+LENSES: Interchangeable Nikkor AF lenses in Nikon F bayonet mount. Almost all other Nikkor lenses usable with some restrictions. 
+SHUTTER: Electronically controlled, vertical-travel focal-plane; speeds from 30 to 1/8000 sec plus В; X synch at 1/250 sec.
+FILM ADVANCE: Motor-driven; single-frame and continuous modes, up to 3.3 fps. Autoloading; power rewind. 
+EXPOSURE SYSTEM: Dual, normal, and high-speed AE programs, shutter-priority AE, aperture-priority AE, metered manual. Dual program adjusts to lens focal length in two stops. Program shift. SPD for five-segment matrix metering or overall metering with 75-percent emphasis in 12-mm center area. EV 0-21 (at ISO 100, with f/1.4 lens). ISO 25-5000 for DX-coded film, ISO 6-6400 for noncoded film. AE lock, exposure compensation ±5 EV in Vs EV stops. AE bracketing with multicontrol back. VIEWFINDER: Fixed eye-level prism with interchangeable focusing screens. Standard screen has AF brackets, circle for centerweighted metering area, full manual-focus area. Automatically illuminated LCD panel below image area shows focus indicators, shutter speed, f-stop, AE mode, manual metering, ISO, exposure compensation, under/overexpo-sure. Flash ready/OK LED. FLASH: SPD for TTL AE flash in all AE modes with dedicated-flash units. Flash AE with both metering patterns. Fill-flash AE, low-speed synch, second-curtain synch. Dedicated hot shoe.
+OTHER FEATURES: LCD panel on top deck shows shutter speed, f-stop, exposure mode, meter pattern, manual metering, ISO, exposure compensation, film-advance mode, self-timer, multiple exposure, frame counter. Variable self-timer, depth-of-field preview, audible, cancelable slow-speed warning. Accepts data and multifunction backs; remote control.
+
+BATTERIES: Four AA alkaline or nicad.
+
+PRICE: Body only, $858; with 50mm f/1.8 lens (as shown) $960.50.
+
+The N8008 is Nikon's top-of-the-line AF camera for amateurs. It’s indicative of the camera’s versatility and handling that it became a favorite among professionals before the advent of the F4. It remains so as a valued second or alternative camera even now that the F4 has become available.
+
+The N8008 has the smooth, rounded look and push-button controls typical of current SLRs. A large LCD panel on the top deck displays a wealth of information, although only the relevant data is visible at any given time. Most of this information is duplicated in the viewfinder LCD readout, so you seldom have to remove your eye from the finder.
+
+The N8008 has a unique operating system. Instead of using single buttons to control exposure mode, set the ISO, make multiple exposures, or change the drive, you need only touch one quarter of a single largish push button on the left side of the camera while turning the knurled command input dial. However, there are two additional adjacent buttons to handle meter-pattern change and the self-timer. We judged the setup to be one of the most convenient on any AF SLR.
+
+Sports photographers will certainly be interested in the 1/8000-sec top shutter speed of the N8008. Depending on the mode, the N8008 can synchronize electronic flash at all speeds from 30 to 1/250 sec.
+
+AF operation is quick and accurate, even with difficult subjects. We found that the N8008 could follow-focus a moving car with the 300mm f/4 Nikkor wide open, as long as we kept the center focus brackets on target. Low-light AF extends to a remarkable EV -1, which would require an exposure of 4 sec at f/1.4 on ISO 100 film.
+
+There’s also a choice of TTL metering patterns. Experienced Nikon users will recognize the centerweighted mode, which concentrates meter sensitivity in a 12-mm circle, but there is one difference: The N8008 has a heavier 75/25 weighting, rather than the usual 60/40. Nikon engineers have (correctly) assumed that this pattern is likely to be used only for very tricky situations, and therefore made it essentially a semispot meter.
+
+For most shooting we preferred the matrix metering pattern, which uses a compound SPD to divide the image area into five sections, each evaluated for brightness and contrast by onboard computer circuitry. The matrix recognizes and compensates for situations such as spotlighting or an off-center subject against a bright background.
+
+The dual-program AE mode automatically switches between normal and action-oriented programs according to the focal length of the lens being used. You can also select either program manually. Other modes include aperture-and shutter-priority .AE plus metered manual. An elaborate TTL flash system operates in all AE modes with dedicated-flash units such as the SB-24. In addition to fill-flash AE, you can create special effects, including second-curtain synch and repeating flash at up to eight "pops” per second.
+
+Even after you've mastered its basic operation, the N8008 continues to offer surprises. For example, the self-timer can be set for any delay time from 2 to 30 seconds, and it can even make a pair of exposures with different delays. Accessories such as the MF-21 multicontrol back greatly extend the camera’s capabilities.
+
+It is a highly reliable and flexible picture maker with good autofocus capabilities.
+
