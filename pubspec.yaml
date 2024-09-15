@@ -140,6 +140,12 @@ flutter:
     - assets/films_catalogue/kodak/18/texts/ # Ektar 25
 
     # -----------------------------------------------------
+    # LENSES
+    # Asahi Pentax
+    - assets/lenses_catalogue/asahi_pentax/1/images/ # 50/1.4
+    - assets/lenses_catalogue/asahi_pentax/1/texts/ # 50/1.4
+
+    # -----------------------------------------------------
 
     - assets/images/fixers/
 
@@ -148,7 +154,7 @@ flutter:
     - assets/images/flashes/canon/
 
 
-    - assets/images/lenses/asahi_pentax/
+
 
 
     - assets/images/meters/minolta/
