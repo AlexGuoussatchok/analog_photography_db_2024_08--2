@@ -12,6 +12,7 @@ class _CatalogueLensesScreenState extends State<CatalogueLensesScreen> {
   List<String> lensesBrands = [];
   List<String> lensesModels = [];
   String? selectedBrand;
+  String searchQuery = '';
 
   @override
   void initState() {
@@ -50,7 +51,6 @@ class _CatalogueLensesScreenState extends State<CatalogueLensesScreen> {
     String imagePath = 'assets/images/lenses/$brand/$imageId.jpg';
 
     List<Widget> detailWidgets = details.entries.where((entry) =>
-    // Exclude entries that are null or in the excludedColumns list
     entry.value != null &&
         entry.value.toString().isNotEmpty &&
         !excludedColumns.contains(entry.key)
@@ -71,19 +71,18 @@ class _CatalogueLensesScreenState extends State<CatalogueLensesScreen> {
             Text(
               entry.key.replaceAll('_', ' '),
               style: const TextStyle(fontWeight: FontWeight.bold),
-            ), // The column name
+            ),
             const SizedBox(height: 4.0),
-            Text(entry.value.toString()), // The value for that column
+            Text(entry.value.toString()),
           ],
         ),
       );
     }).toList();
 
-    // Combined list of widgets with image and details
     List<Widget> combinedWidgets = [
-      Image.asset(imagePath), // Display the lenses image
+      Image.asset(imagePath),
       Text(details['model']?.replaceAll('_', ' ') ?? "Unknown Model"),
-      const SizedBox(height: 10.0), // Optional: To add some spacing
+      const SizedBox(height: 10.0),
       ...detailWidgets
     ];
 
@@ -121,6 +120,7 @@ class _CatalogueLensesScreenState extends State<CatalogueLensesScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            // Brand dropdown
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8.0),
@@ -151,21 +151,67 @@ class _CatalogueLensesScreenState extends State<CatalogueLensesScreen> {
               ),
             ),
             const SizedBox(height: 16.0),
+
+            // Search field for models
+            TextField(
+              onChanged: (value) {
+                setState(() {
+                  searchQuery = value;
+                });
+              },
+              decoration: InputDecoration(
+                labelText: 'Search models',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            const SizedBox(height: 16.0),
+
+            // Models list
             Expanded(
               child: ListView.builder(
                 itemCount: lensesModels.length,
                 itemBuilder: (context, index) {
+                  if (searchQuery.isNotEmpty &&
+                      !lensesModels[index].toLowerCase().contains(searchQuery.toLowerCase())) {
+                    return const SizedBox(); // Don't show unmatched items
+                  }
                   return ListTile(
                     title: Text(lensesModels[index]),
                     onTap: () async {
-                      Map<String, dynamic> details = await LensesCatalogueDatabaseHelper().getLensesDetails(selectedBrand!, lensesModels[index]);
+                      Map<String, dynamic> details = await LensesCatalogueDatabaseHelper()
+                          .getLensesDetails(selectedBrand!, lensesModels[index]);
                       _showLensesDetails(context, details);
                     },
-
                   );
                 },
               ),
-            )
+            ),
+
+            // Status bar at the bottom
+            const SizedBox(height: 10),
+            Container(
+              padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 16.0),
+              decoration: BoxDecoration(
+                color: Colors.grey.shade200,
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    '${lensesModels.length} models available',
+                    style: const TextStyle(fontSize: 16.0),
+                  ),
+                  if (selectedBrand != null)
+                    Text(
+                      'Brand: $selectedBrand',
+                      style: const TextStyle(fontSize: 16.0),
+                    ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

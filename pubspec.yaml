@@ -54,6 +54,10 @@ flutter:
     - assets/cameras_catalogue/canon/70/texts/
     - assets/cameras_catalogue/canon/72/images/
     - assets/cameras_catalogue/canon/72/texts/
+    - assets/cameras_catalogue/canon/74/images/ #EOS-750
+    - assets/cameras_catalogue/canon/74/texts/ #EOS-750
+    - assets/cameras_catalogue/canon/75/images/ #EOS-850
+    - assets/cameras_catalogue/canon/75/texts/ #EOS-850
     - assets/cameras_catalogue/canon/208/images/
     - assets/cameras_catalogue/canon/208/texts/
     - assets/cameras_catalogue/canon/210/images/
@@ -106,6 +110,9 @@ flutter:
     # Olympus
     - assets/cameras_catalogue/olympus/105/images/
     - assets/cameras_catalogue/olympus/105/texts/
+    # Ricoh
+    - assets/cameras_catalogue/ricoh/147/images/ # Mirai
+    - assets/cameras_catalogue/ricoh/147/texts/ # Mirai
     # Topcon
     - assets/cameras_catalogue/topcon/26/images/
     - assets/cameras_catalogue/topcon/26/texts/
@@ -124,7 +131,13 @@ flutter:
     # Agfa
     - assets/films_catalogue/agfa/1/images/
     - assets/films_catalogue/agfa/1/texts/
-
+    - assets/films_catalogue/agfa/18/images/ # Agfacolor XRC 100
+    - assets/films_catalogue/agfa/18/texts/ # Agfacolor XRC 100
+    - assets/films_catalogue/agfa/19/images/ # Agfacolor XRC 200
+    - assets/films_catalogue/agfa/19/texts/ # Agfacolor XRC 200
+    # Kodak
+    - assets/films_catalogue/kodak/18/images/ # Ektar 25
+    - assets/films_catalogue/kodak/18/texts/ # Ektar 25
 
     # -----------------------------------------------------
 
