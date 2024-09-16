@@ -118,6 +118,9 @@ flutter:
     - assets/cameras_catalogue/topcon/26/texts/
     - assets/cameras_catalogue/topcon/27/images/
     - assets/cameras_catalogue/topcon/27/texts/
+    # Yashica
+    - assets/cameras_catalogue/yashica/103/images/ # Samurai X3.0
+    - assets/cameras_catalogue/yashica/103/texts/ # Samurai X3.0
 
 
     # ----------------------------------------------------
@@ -135,6 +138,9 @@ flutter:
     - assets/films_catalogue/agfa/18/texts/ # Agfacolor XRC 100
     - assets/films_catalogue/agfa/19/images/ # Agfacolor XRC 200
     - assets/films_catalogue/agfa/19/texts/ # Agfacolor XRC 200
+    # Fujifilm
+    - assets/films_catalogue/fujifilm/13/images/ # Reala
+    - assets/films_catalogue/fujifilm/13/texts/ # Reala
     # Kodak
     - assets/films_catalogue/kodak/18/images/ # Ektar 25
     - assets/films_catalogue/kodak/18/texts/ # Ektar 25
